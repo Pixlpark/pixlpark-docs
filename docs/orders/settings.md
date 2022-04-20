@@ -69,6 +69,7 @@
     + [1С: Полиграфия](https://solutions.1c.ru/catalog/polygraphy)
     + [Принт-Эксперт](https://print-expert.net/)
     + Своё ПО (синхронизация по [API](/dev/api.md)).
+    
 * Подробнее о настройке читать в статье "[Интеграция с ERP и CRM системами](/integration/crm)".
 
 ![](../_media/order/order82.png ':size=70%')
