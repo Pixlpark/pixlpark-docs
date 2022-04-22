@@ -80,7 +80,7 @@
 ![](../_media/integration/metrik02.png ':size=70%')
 ![](../_media/integration/metrik03.png ':size=60%')
 * Параллельно открыть в панели управления Pixlpark раздел "__Маркетинг / Сервисы__" и включить "__Яндекс.Метрика__".
-* Затем скопировать поле из "__Яндекс.Метрика__" в Pixlpark:
+* Затем скопировать поле из Яндекс.Метрика в Pixlpark:
     + "__Идентификатор счетчика__" в "__Идентификатор счетчика__".
 * При необходимости скорректировать активность Веб-визора.
 ![](../_media/integration/metrik04.png ':size=70%')
@@ -99,7 +99,7 @@
 * Параллельно открыть в панели управления Pixlpark раздел "__Маркетинг / Сервисы__" и включить "__Mneniya.Pro__".
 ![](../_media/integration/mneniya02.png ':size=70%')
 
-* Затем скопировать поля из "Mneniya.Pro" в Pixlpark:
+* Затем скопировать поля из Mneniya.Pro в Pixlpark:
     + "__ID__" в "__App ID__";
     + "__Token__" в "__Token__".
 ![](../_media/integration/mneniya03.png ':size=70%')
@@ -114,7 +114,7 @@
     + __Postback key__ - ключ идентификации postback-запроса.
 * Параллельно открыть в панели управления Pixlpark раздел "__Маркетинг / Сервисы__" и включить "__Admitad__".
 ![](../_media/integration/admitad01.png ':size=70%')
-* Затем скопировать поля из "Admitad" в Pixlpark:
+* Затем скопировать поля из Admitad в Pixlpark:
     + "__App ID__" в "__App ID__";
     + "__Postback key__" в "__Postback key__".
 ![](../_media/integration/admitad02.png ':size=70%')
