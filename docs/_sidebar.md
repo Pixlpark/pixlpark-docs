@@ -156,8 +156,8 @@
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
-	- [Данные для печатного сайта](/misc/prints-data.md)
-	- [Данные для сувенирного сайта](/misc/gifts-data.md)
+	- [Данные для сайта Web-to-Print](/misc/prints-data.md)
+	- [Данные для сайта по бизнес-сувенирам](/misc/gifts-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
 	- [Техническая поддержка](/misc/support.md)
