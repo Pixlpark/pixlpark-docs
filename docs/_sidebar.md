@@ -26,7 +26,7 @@
 	- [Партнёрская программа](/marketing/affiliates.md)
 	- [Брошенные корзины](/marketing/cards.md)
 	- [Триггерные уведомления](/marketing/notice.md)
-	- [Внешние сервисы](/marketing/services.md)
+	- [Сервисы](/marketing/services.md)
 
 - CMS
 	- [Страницы сайта](/cms/pages.md)
@@ -63,10 +63,10 @@
 	- [Карточка шаблонов](/print/templates.md)
 	- [Список шаблонов](/print/templates-list.md)
 	- [Карточка клипартов](/print/cliparts.md)
+	- [Страницы шаблонов](/print/tpages.md)
 	- [Список клипартов](/print/cliparts-list.md)
 	- [Теги дизайнов](/print/tags.md)
 	- [Мерч](/print/merch.md)
-	- [Страницы шаблонов](/print/tpages.md)
 	- [Страница раздела](/print/page.md)
 	- [Настройка](/print/settings.md)
 
