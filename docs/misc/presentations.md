@@ -7,7 +7,7 @@
 </tr>
 </table>
 
-## Сайт по бизнес-сувенирам
+## Бизнес-сувениры
 <table>
 <tr>
 <td width="800"><iframe width="800" height="400" src="https://www.youtube.com/embed/uWlQy3epnhI?start=428" frameborder="0" allowfullscreen></iframe></td>
