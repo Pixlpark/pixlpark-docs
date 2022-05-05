@@ -90,21 +90,17 @@
 	- [Настройка](/shop/settings.md)
 
 - Фотогалерея
-	- [Карточка категории](/gallery/products.md)
-	- [Список категорий](/gallery/list.md)
+	- [Иллюстрации](/gallery/list.md)
 	- [Страница раздела](/gallery/page.md)
 	- [Настройка](/gallery/settings.md)
 
 - Статьи
-	- [Карточка статьи](/faq/paper.md)
-	- [Карточка категории](/faq/category.md)
-	- [Список статей и категорий](/faq/list.md)
+	- [База знаний](/faq/list.md)
 	- [Страница раздела](/faq/page.md)
 	- [Настройка](/faq/settings.md)
 
 - Новости
-	- [Карточка новости](/news/news.md)
-	- [Список новостей](/news/list.md)
+	- [Лента новостей](/news/list.md)
 	- [Страница раздела](/news/page.md)
 	- [Настройка](/news/settings.md)
 
@@ -115,11 +111,11 @@
 	- [Настройка](/feedback/settings.md)
 
 - Приложение
-	- [Основные настройки](/app/settings.md)
-	- [Региональные настройки](/app/region.md)
-	- [Дизайн приложения](/app/design.md)
-	- [Локализация приложения](/app/localization.md)
-	- [Настройка магазина](/app/shop.md)
+	- [Настройка](/app/settings.md)
+	- [Регион](/app/region.md)
+	- [Дизайн](/app/design.md)
+	- [Локализация](/app/localization.md)
+	- [Сайты](/app/shop.md)
 - Профиль
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)

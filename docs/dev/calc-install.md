@@ -12,7 +12,7 @@
 ```
 * Калькулятор можно интегрировать на внешний сайт. Для этого необходимо сделать следующее:
 
-## 1. Создать контейнер
+## 1. Создание контейнер
 * Cоздать на странице контейнер, в котором позже будет находиться калькулятор.
 ```js
 <div id="integratedCalculator"></div>
@@ -32,7 +32,7 @@
 <details>
 <summary>cssLink</summary>
 
-| cssLink | |
+| | cssLink |
 |---|---|
 | __описание__ | Загружает на страницу css файл по указанной ссылке |
 | __по-умолчанию__ | common.css |
@@ -40,6 +40,9 @@
 | __пример использования__ | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?cssLink=/content/css/cssCalc"></script>` |
 
 </details>
+
+
+
 
 <details>
 <summary>photolabId</summary>
