@@ -111,11 +111,11 @@
 	- [Настройка](/feedback/settings.md)
 
 - Приложение
-	- [Основные настройки](/app/settings.md)
-	- [Региональные настройки](/app/region.md)
-	- [Дизайн приложения](/app/design.md)
-	- [Локализация приложения](/app/localization.md)
-	- [Настройка магазина](/app/shop.md)
+	- [Настройка](/app/settings.md)
+	- [Регион](/app/region.md)
+	- [Дизайн](/app/design.md)
+	- [Локализация](/app/localization.md)
+	- [Сайты](/app/shop.md)
 - Профиль
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)

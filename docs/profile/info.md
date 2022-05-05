@@ -1,4 +1,5 @@
 # Информация
 * В данном разделе представлена контактные данные компании и текущий тарифный план по использованию сервиса.
 * Для изменения информации данного раздела необходимо отправить письмо в техническую поддержку Pixlpark по адресу [support@pixlpark.com](mailto:support@pixlpark.com).
-![](../_media/profile/profile01.png ':size=70%')
+*![](../_media/profile/company-1.png)
+*![](../_media/profile/company-2.png)
