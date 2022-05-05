@@ -136,6 +136,8 @@
 	- [Облачные хранилища](/integration/drives.md)
 	- [ERP и CRM системы](/integration/crm.md)
 	- [Поставщики сувениров](/integration/gifts.md)
+	- [Оплата заказов](/integration/payments.md)
+	- [Доставка заказов](/integration/shippings.md)
 		
 - Разработчикам
 	- [Создание уникального дизайна](/dev/design.md)
