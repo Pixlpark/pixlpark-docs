@@ -1,5 +1,5 @@
 # Информация
 * В данном разделе представлена контактные данные компании и текущий тарифный план по использованию сервиса.
-* Для изменения информации данного раздела необходимо отправить письмо в техническую поддержку Pixlpark по адресу [support@pixlpark.com](mailto:support@pixlpark.com).
+* Для изменения информации данного раздела необходимо [оставить заявку](http://support.pixlpark.ru/Main/frmNewTicket.aspx) в техническую поддержку Pixlpark или написать письмо на [support@pixlpark.com](mailto:support@pixlpark.com).
 *![](../_media/profile/company-1.png)
 *![](../_media/profile/company-2.png)
