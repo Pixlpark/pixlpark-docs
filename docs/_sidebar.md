@@ -80,9 +80,7 @@
 	- [Настройка](/gift/settings.md)
 
 - Магазин
-	- [Карточка продукта](/shop/products.md)
-	- [Карточка категории](/shop/category.md)
-	- [Список категорий и продуктов](/shop/list.md)
+	- [Продукты](/shop/list.md)
 	- [Свойства](/shop/properties.md)
 	- [Параметры](/shop/parameters.md)
 	- [Производители](/shop/vendors.md)
@@ -132,8 +130,8 @@
 	- [Облачные хранилища](/integration/drives.md)
 	- [ERP и CRM системы](/integration/crm.md)
 	- [Поставщики сувениров](/integration/gifts.md)
-	- [Оплата заказов](/integration/payments.md)
-	- [Доставка заказов](/integration/shippings.md)
+	- [Платежные системы](/integration/payments.md)
+	- [Транспортные компании](/integration/shippings.md)
 		
 - Разработчикам
 	- [Создание уникального дизайна](/dev/design.md)
