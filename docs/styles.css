@@ -372,6 +372,10 @@ section.content .search {
     margin: 15px 0 0.6rem;
 }
 
+.content .markdown-section h4 {
+    margin: 0px 0 0.6rem;
+}
+
 .content .markdown-section h1 a,
 .content .markdown-section h2 a {
     pointer-events: none;
