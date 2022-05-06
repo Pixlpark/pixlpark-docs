@@ -71,9 +71,7 @@
 	- [Настройка](/print/settings.md)
 
 - Сувениры
-	- [Карточка продукта](/gift/products.md)
-	- [Карточка категории](/gift/category.md)
-	- [Список категорий](/gift/list.md)
+	- [Продукты](/gift/list.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
 	- [Страница раздела](/gift/page.md)
