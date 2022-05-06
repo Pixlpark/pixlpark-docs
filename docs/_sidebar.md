@@ -29,11 +29,11 @@
 	- [Сервисы](/marketing/services.md)
 
 - CMS
-	- [Страницы сайта](/cms/pages.md)
-	- [Локализация сайта](/cms/localization.md)
-	- [Языки сайта](/cms/languages.md)
-	- [Дизайн сайта](/cms/design.md)
-	- [Менеджер файлов](/cms/files.md)
+	- [Страницы](/cms/pages.md)
+	- [Локализация](/cms/localization.md)
+	- [Языки](/cms/languages.md)
+	- [Дизайн](/cms/design.md)
+	- [Файлы](/cms/files.md)
 	- [Настройка](/cms/settings.md)
 
 - Настройка
@@ -71,18 +71,14 @@
 	- [Настройка](/print/settings.md)
 
 - Сувениры
-	- [Карточка продукта](/gift/products.md)
-	- [Карточка категории](/gift/category.md)
-	- [Список категорий](/gift/list.md)
+	- [Продукты](/gift/list.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
 	- [Страница раздела](/gift/page.md)
 	- [Настройка](/gift/settings.md)
 
 - Магазин
-	- [Карточка продукта](/shop/products.md)
-	- [Карточка категории](/shop/category.md)
-	- [Список категорий и продуктов](/shop/list.md)
+	- [Продукты](/shop/list.md)
 	- [Свойства](/shop/properties.md)
 	- [Параметры](/shop/parameters.md)
 	- [Производители](/shop/vendors.md)
@@ -132,8 +128,8 @@
 	- [Облачные хранилища](/integration/drives.md)
 	- [ERP и CRM системы](/integration/crm.md)
 	- [Поставщики сувениров](/integration/gifts.md)
-	- [Оплата заказов](/integration/payments.md)
-	- [Доставка заказов](/integration/shippings.md)
+	- [Платежные системы](/integration/payments.md)
+	- [Транспортные компании](/integration/shippings.md)
 		
 - Разработчикам
 	- [Создание уникального дизайна](/dev/design.md)
