@@ -23,7 +23,7 @@
 	- [Сертификаты](/marketing/certificates.md)
 	- [Партнёры](/marketing/affiliates.md)
 	- [Корзины](/marketing/cards.md)
-	- [Уведомления](/marketing/notice.md)
+	- [Уведомления](/marketing/notifications.md)
 	- [Сервисы](/marketing/services.md)
 
 - CMS
