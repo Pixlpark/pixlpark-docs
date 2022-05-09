@@ -11,11 +11,9 @@
 	- [Настройка](/orders/settings.md)
 
 - Клиенты
-	- [Карточка частного лица](/customers/b2c.md)
-	- [Карточка организации](/customers/b2b.md)
-	- [Список частных лиц](/customers/b2c-list.md)
-	- [Список организаций](/customers/b2b-list.md)
-	- [Импорт частных лиц](/customers/import.md)
+	- [Частные лица](/customers/b2c.md)
+	- [Организации](/customers/b2b.md)
+	- [Импорт](/customers/import.md)
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
