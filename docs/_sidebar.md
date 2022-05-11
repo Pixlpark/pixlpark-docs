@@ -32,14 +32,12 @@
 	- [Настройка](/cms/settings.md)
 
 - Настройка
-	- [Региональные настройки](/site/region.md)
-	- [Доменные имена](/site/domains.md)
-	- [Настройки доступа](/site/access.md)
-	- [Карточка доставки](/site/shippings.md)
-	- [Способы доставки](/site/ship-list.md)
-	- [Карточка оплаты](/site/payments.md)
-	- [Способы оплаты](/site/pay-list.md)
-	- [Настройка интеграций](/site/socials.md)
+	- [Регион](/site/region.md)
+	- [Доменны](/site/domains.md)
+	- [Доступ](/site/access.md)
+	- [Доставка](/site/shippings.md)
+	- [Оплата](/site/payments.md)
+	- [Сервисы](/site/socials.md)
 
 - Печать
 	- [Карточка категории](/print/category.md)
