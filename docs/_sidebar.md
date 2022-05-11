@@ -13,7 +13,6 @@
 - Клиенты
 	- [Частные лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
-	- [Импорт](/customers/import.md)
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
