@@ -6,8 +6,8 @@
 	- [Карточка заказа](/orders/edit.md)
 	- [Список заказов](/orders/list.md)
 	- [Создание заказа](/orders/create.md)
-	- [Статистика продаж](/orders/report.md)
-	- [Экспорт заказов](/orders/export.md)
+	- [Статистика](/orders/report.md)
+	- [Экспорт](/orders/export.md)
 	- [Настройка](/orders/settings.md)
 
 - Клиенты
