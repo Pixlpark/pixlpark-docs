@@ -8,4 +8,4 @@
     + __[Admitad](https://www.admitad.com/ru/)__ - глобальная партнерская сеть сайтов для рекламы чего-либо.
     + __[Mindbox](https://mindbox.ru/)__ - платформа для автоматизации маркетинга, основной целью которой является объединение клиентов из офлайна и онлайна.
 
-![](../_media/marketing/marketing43.png ':size=70%')
+![](../_media/marketing/services.png)
