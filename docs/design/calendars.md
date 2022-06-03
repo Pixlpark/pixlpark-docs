@@ -10,6 +10,6 @@
 
 ## Пример шаблона
 * Обложка:
-![](../_media/design/design06.png ':size=70%')
+![](../_media/design/design06.png)
 * Разворот:
-![](../_media/design/design07.png ':size=70%')
+![](../_media/design/design07.png)

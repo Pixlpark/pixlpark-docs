@@ -366,10 +366,15 @@ section.content .search {
     margin-top: -55px!important;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box;}
+    background-clip: padding-box;
+}
 
 .content .markdown-section h3 {
-    margin: 15px 0 0.6rem;
+    margin: 10px 0 0 0 ;
+}
+
+.content .markdown-section h4 {
+    margin: 10px 0 0 0 ;
 }
 
 .content .markdown-section h1 a,
@@ -591,4 +596,9 @@ header .header-link:focus {
     .content .markdown-section h2 {
         font-size: 1rem;
     }
-}
+    .content .markdown-section h3 {
+        font-size: 0.75rem;
+    }
+    .content .markdown-section h4 {
+        font-size: 0.5rem;
+    }}
