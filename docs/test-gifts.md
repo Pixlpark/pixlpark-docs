@@ -30,7 +30,7 @@
 Для подключения Проекта 111 дополнительно просим Вас прислать "Код компании". <br>
 
 <div style="display:flex; align-items:center">
-<img src="../_media/misc/catalog_1.png" style="display:inline-block; max-width:150px; margin:0 20px 0 0"> [Перейти ➜](https://gifts.ru/) </div>
+<img src="../_media/misc/catalog_1.png" style="display:inline-block; max-width:150px; margin:0 20px 0 0"> <a href="https://gifts.ru/">Перейти ➜</a> </div>
 
 ## 5. Доставка и оплата
 Необходимо перечислить возможные способы получения и оплаты заказа.<br>
