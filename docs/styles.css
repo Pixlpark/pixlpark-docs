@@ -605,3 +605,8 @@ header .header-link:focus {
 
     .gifts-data--picture-block{
     display:flex; align-items:center; flex-direction:column; border-radius: 7px; border: 1px solid #ccc; padding:10px 20px; justify-content:center; margin:15px 15px 15px 0;}
+    
+    .gifts--contacts-list ul{
+        padding-left: 1.5rem;
+        list-style: disc;
+    }
