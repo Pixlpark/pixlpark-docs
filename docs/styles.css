@@ -24,6 +24,7 @@ aside.sidebar {
 
 main {
     padding: 0;
+    z-index:2;
 }
 
 .content {
@@ -175,6 +176,7 @@ header .bottom-row .search-clone_button {
     cursor: pointer;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    z-index:0;
 }
 
 header .bottom-row .search-clone_button svg {
