@@ -1,39 +1,68 @@
 # Данные для настройки сайта по бизнес-сувенирам
-Ниже представлены данные, которые необходимо подготовить для проведения первичной настройки сайта специалистами компании Pixlpark.
+Ниже представлены данные, которые необходимо подготовить для проведения первичной настройки сайта специалистами компании Pixlpark.<br>
 
-## 1. Два логотипа и иконка
-Основной логотип размещается в шапке сайта (формат: .png; ширина: от 220 до 350рх, высота: от 90 до 180рх).
-![](../_media/misc/logo1-gifts.png ':size=70%')
+<div class="gifts-data--wrapper">
 
-Вспомогательный логотип размещается в скроллируемом меню (формат: .png; ширина: от 120 до 180рх, высота: не более 32рх).
-![](../_media/misc/logo2-gifts.png ':size=70%')
+### 1. Логотип и иконка
+Предоставить логотип компании в формате .svg и иконку для сайта (если есть).
 
-Иконка размещается во вкладке браузера (формат: .ico или .png; ширина от 24 до 32рх, высота: от 24 до 32рх)
-![](../_media/misc/favicon-gifts.png)
+### 2. Контактные данные
+<div class="gifts--contacts-list">
 
-## 2. Контактные данные
-* Адрес, эл. почта, телефон и мессенджеры ([пример](https://gifts.pixlpark.ru/contact-us)).
-* Название бренда и реквизиты организации ([пример](https://gifts.pixlpark.ru/requisites)).
-* Подпись и печать организации для счета (формат: .png).
-* Группы и страницы в социальных сетях.
+* Физический адрес;
+* Номер телефона;
+* Адрес электронной почты.
 
-![](../_media/misc/contacts-gifts.png ':size=70%')
+</div>
 
-## 3. Оформление сайта
-На [демо-сайте](https://gifts.pixlpark.ru) в левом верхнем углу в панели "Конфигуратор дизайном" можно ознакомиться с вариантами оформления шапки, каталога и подвала.
-![](../_media/misc/design-gifts.png)
+### 3. Данные для счетов
 
-Также необходимо определиться с двумя основными корпоративными цветами, которые будут использоваться взамен зеленого и оранжевого.
-![](../_media/misc/products-gifts.png ':size=70%')
+   <div class="gifts--contacts-list">
 
-## 4. Поставщики продукции
-Каталог продукции сайта формируется на основании данных, полученных от поставщиков бизнес-сувениров. <br>
-Вам необходимо выбрать из [списка](https://pixlpark.ru/features/gifts) тех поставщиков, с которыми планируете сотрудничать.<br>
-Отметим, что большинство их них требуют заключение агентского договора.
-![](../_media/misc/catalogs.png ':size=70%')
+   * Реквизиты организации ([пример](https://gifts.pixlpark.ru/requisites));
+   * Подпись и печать организации (формат: .png);
 
-## 5. Доставка и оплата
-Для страницы [оплаты и доставки](https://gifts.pixlpark.ru/delivery-and-payment) необходимо перечислить возможные способы получения и оплаты заказа.<br>
-Вы можете ознакомиться со списком интегрированных в Pixlpark платежных систем и транспортных компаний на [нашем сайте](https://pixlpark.ru/misc/shippings-and-payments).
-![](../_media/misc/shippings.png ':size=70%')
-![](../_media/misc/payments.png ':size=70%')
+   </div>
+
+### 4. Поставщики продукции
+Вам необходимо выбрать из списка тех поставщиков, с которыми планируете сотрудничать.<br>
+
+<div class="gifts-data--catalog-list">
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_1.png"> <a href="https://gifts.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_2.png"> <a href="https://happygifts.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_3.png"> <a href="https://www.oasiscatalog.com/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_4.png"> <a href="https://www.oceangifts.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_5.png"> <a href="https://www.stan.su/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_6.png"> <a href="https://xindaorussia.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_7.png"> <a href="https://portobello.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_8.png"> <a href="https://midoceanbrands.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_9.png"> <a href="https://vivagifts.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_10.png"> <a href="https://topcatalog.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_11.png"> <a href="https://artbottle.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_12.png"> <a href="https://printsklad.ru/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_13.png"> <a href="https://artegifts.by/">Перейти ➜</a> </div>
+<div class="gifts-data--catalog-item">
+<img src="../_media/misc/catalog_14.png"> <a href="https://www.center-prestige.ru/">Перейти ➜</a> </div>
+</div>
+
+Сообщите нам, с какими поставщиками Вы заключили договоры, а также данные Ваших аккаунтов на их сайтах (логин и пароль только от Проекта 111 и Oasis — остальные не нужны). <br>
+Для подключения Проекта 111 дополнительно просим Вас прислать "Код компании". <br>
+
+### 5. Доставка и оплата
+Необходимо перечислить возможные способы получения и оплаты заказа.<br>
+Вы можете ознакомиться со списком интегрированных в Pixlpark платежных систем и транспортных компаний на [нашем сайте](https://pixlpark.ru/misc/shippings-and-payments).<br>
+
+</div>
