@@ -603,10 +603,26 @@ header .header-link:focus {
         font-size: 0.5rem;
     }}
 
-    .gifts-data--picture-block{
-    display:flex; align-items:center; flex-direction:column; border-radius: 7px; border: 1px solid #ccc; padding:10px 20px; justify-content:center; margin:15px 15px 15px 0;}
-    
-    .gifts--contacts-list ul{
+    .gifts-data--wrapper { margin-bottom:30px;}
+
+    .gifts-data--wrapper .content .markdown-section h3 { margin: 10px 0 10px 0;}
+
+    .gifts-data--wrapper .gifts--contacts-list ul{
         padding-left: 1.5rem;
         list-style: disc;
+        margin: 0;
     }
+    
+    .gifts-data--wrapper  .gifts-data--catalog-list{
+        display:flex; flex-wrap:wrap; margin:15px 0;}
+
+    .gifts-data--wrapper .gifts-data--catalog-item{
+        display:flex; align-items:center; flex-direction:column; border-radius: 7px; border: 1px solid #ccc; padding:10px 20px; justify-content:center; margin:15px 15px 15px 0;}
+    
+     .gifts-data--wrapper .gifts-data--catalog-item img{
+        display:inline-block; max-width:120px;
+     }
+
+   
+
+  
