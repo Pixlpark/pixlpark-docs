@@ -24,7 +24,6 @@ aside.sidebar {
 
 main {
     padding: 0;
-    z-index: 1;
 }
 
 .content {
@@ -60,7 +59,7 @@ header {
     padding: 0 0 0 300px;
     margin: 0;
     background: #f6f6f6;
-    z-index: -1;
+    z-index: 0;
 }
 
 header .logo-container {
@@ -93,7 +92,6 @@ header .header-main-container>div {
     max-width: 900px;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 header .header-main-container .top-row {
