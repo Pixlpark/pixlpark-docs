@@ -60,7 +60,7 @@ header {
     padding: 0 0 0 300px;
     margin: 0;
     background: #f6f6f6;
-    z-index: 0;
+    z-index: -1;
 }
 
 header .logo-container {
@@ -177,6 +177,7 @@ header .bottom-row .search-clone_button {
     cursor: pointer;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    z-index: 0;
 }
 
 header .bottom-row .search-clone_button svg {
