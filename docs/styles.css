@@ -605,7 +605,7 @@ header .header-link:focus {
 
     .gifts-data--wrapper { margin-bottom:30px;}
 
-    .gifts-data--wrapper .content .markdown-section h3 { margin: 10px 0 10px 0;}
+    .content .markdown-section .gifts-data--wrapper  h3 { margin: 10px 0 10px 0;}
 
     .gifts-data--wrapper .gifts--contacts-list ul{
         padding-left: 1.5rem;
