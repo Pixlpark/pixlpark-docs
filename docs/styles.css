@@ -24,7 +24,6 @@ aside.sidebar {
 
 main {
     padding: 0;
-    z-index:2;
 }
 
 .content {
@@ -93,6 +92,7 @@ header .header-main-container>div {
     max-width: 900px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 header .header-main-container .top-row {
@@ -176,7 +176,6 @@ header .bottom-row .search-clone_button {
     cursor: pointer;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    z-index:0;
 }
 
 header .bottom-row .search-clone_button svg {
