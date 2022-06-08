@@ -128,7 +128,7 @@
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
-	- [Данные для сайта Web-to-Print](/misc/prints-data.md)
+	- [Данные для Web-to-Print сайта](/misc/prints-data.md)
 	- [Данные для бизнес-сувениров](/misc/gifts-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
