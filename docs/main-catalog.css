@@ -17,7 +17,7 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul {
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
     position: relative;
-    width: calc(33.3333% - 20px);
+    width: calc(25% - 20px);
     height: 145px;
     margin: 0 10px 20px;
     border-radius: var(--rounded-value);

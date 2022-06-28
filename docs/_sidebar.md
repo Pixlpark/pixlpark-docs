@@ -113,7 +113,6 @@
 	- [Создание уникального дизайна](/dev/design.md)
 	- [Программная модель калькулятора](/dev/calc.md)
 	- [Установка калькулятора на сайт](/dev/calc-install.md)
-	- [Примеры настройки калькулятора](/dev/example.md)
 	- [Внедрение редактора на внешний сайт](/dev/editor.md)
 	- [Работа с API и Вебхуками](/dev/api.md)
 	- [Язык разметки Scriban](/dev/scriban.md)
@@ -125,6 +124,14 @@
 	- [PSD-шаблоны для именных фотокниг](/design/named-photobooks.md)
 	- [PSD-шаблоны для печатей и штампов](/design/stamps.md)
 	- [3D-модели для предпросмотра](/design/3d-models.md)
+
+- Калькуляторы
+	- [Печать по прайсу](/calculators/price-printing.md)
+	- [Объемные буквы](/calculators/letters.md)
+	- [Листовая печать](/calculators/sheet-printing.md)
+	- [Лазерная резка](/calculators/laser-cutting.md)
+	- [Нанесение на бизнес-сувениры](/calculators/gift.md)
+	- [Широкоформатная печать](/calculators/large-format-printing.md)
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
