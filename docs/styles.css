@@ -636,7 +636,9 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
      .gifts-data--wrapper .gifts-data--catalog-item img{
         display:inline-block; max-width:120px;
      }
-
-   
-
-  
+     .content .markdown-section pre>code.lang-js{
+        white-space:inherit;
+    }
+    .content .markdown-section pre>code.lang-css{
+        white-space:inherit;
+    }

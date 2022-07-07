@@ -75,7 +75,7 @@
     + __Пользователь__ <br> В данном режиме доступны все функции редактора. Режим запускается при условии установления параметра `config.auth.userToken` отличного от пустой строки или от `null` в конфигурации редактора. Далее, указанный токен будет проверен на сервере. В случае, если валидация токена не осуществится, редактор прекратит свою работу.
 
 * Для получения токена пользователя необходимо реализовать взаимодействие с API Pixlpark.
-* В случае, если пользователь аутентифицирован на внешнем сайте, необходимо получить или создать (при отсутствии данного пользователя на сайте в сервисе Pixlpark) через API Pixlpark и получить внешний токен.
+* В случае, если пользователь аутентифицирован на внешнем сайте, необходимо получить или создать (при отсутствии данного пользователя на сайте в сервисе Pixlpark) через API Pixlpark и получить внешний токен:
     + `GET api.pixlpark.com/users/byEmail` и/или `POST api.pixlpark.com/users/create`.
     + `GET /users/{id}/frontendToken`.
 * В случае, если пользователь не аутентифицирован на внешнем сайте, необходимо его зарегистрировать и создать его копию на сайте в сервисе Pixlpark.
@@ -96,23 +96,23 @@
 * и добавить его в разметку страницы внешнего сайта. Редактор заполнит весь размер контейнера.
 * Далее, добавить на страницу стилевые правила: 
 ```css
-        .btn {background: #fff;border: solid 1px #ccc !important;box-shadow: #ddd 0 0 3px;color: #000 !important;}
+ .btn {background: #fff;border: solid 1px #ccc !important;box-shadow: #ddd 0 0 3px;color: #000 !important;}
 
-        body {font-family: sans-serif;padding: 10px 40px}
-        @keyframes cssload-spin {100% {transform: rotate(360deg);transform: rotate(360deg)}}
+ body {font-family: sans-serif;padding: 10px 40px}
+ @keyframes cssload-spin {100% {transform: rotate(360deg);transform: rotate(360deg)}}
 
-        .editor-container.error {border: solid 1px #983a3a;box-shadow: #e15959 0 0 3px;}
-        .editor-container .error-message {position: relative;margin: 20px;text-align: left;color: #000000;font-family: monospace;
+ .editor-container.error {border: solid 1px #983a3a;box-shadow: #e15959 0 0 3px;}
+ .editor-container .error-message {position: relative;margin: 20px;text-align: left;color: #000000;font-family: monospace;
             z-index: 1000000000;background: #ffcece;padding: 10px 20px;border: solid 1px #a52020;}
 
-        .editor-container {width: 65%; height: 600px; position: relative; border: solid 1px #ccc; box-shadow: #efefef 0 0 14px;}
-        .loading-wheel:before {
-            position:absolute;top:50%;left:50%;content:'';z-index:1112;display:block;width:32px;height:32px;margin:-16px 0 0 -16px;
-            border: 2px solid rgb(117,117,117);border-radius: 50%;border-left-color: transparent;border-right-color: transparent;
-            animation: cssload-spin 500ms infinite linear;
-        }
-        .loading-wheel:after{position:absolute;top:0;left:0;bottom:0;right:0;content:'';background:#fff;z-index:1111;opacity:.9;display:block}
-    ```
+ .editor-container {width: 65%; height: 600px; position: relative; border: solid 1px #ccc; box-shadow: #efefef 0 0 14px;}
+ .loading-wheel:before {
+        position:absolute;top:50%;left:50%;content:'';z-index:1112;display:block;width:32px;height:32px;margin:-16px 0 0 -16px;
+        border: 2px solid rgb(117,117,117);border-radius: 50%;border-left-color: transparent;border-right-color: transparent;
+        animation: cssload-spin 500ms infinite linear;
+  }
+ .loading-wheel:after{position:absolute;top:0;left:0;bottom:0;right:0;content:'';background:#fff;z-index:1111;opacity:.9;display:block}
+```
 * Затем, добавить скрипт для загрузки редактора на страницу внешнего сайта.
 ```js
     <script async src="https://ваш-сайт-в-Pixlpark/api/externalEditor/js" onerror="onPxpError('Error while loading init script')" onload="onPxpLoaded()"></script>
@@ -122,170 +122,177 @@
 ### Определение конфигурации редактора
 * Определить конфигурацию редактора на странице внешнего сайта необходимо при помощи кода:
 ```js
-    const container = document.getElementById('editorContainer');
-    const designEditorConfig = {
-        product: {
-            productUrlName: "идентификатор_продукта", //например, "50x90-one-sided"
-            categoryUrlName: "идентификатор_категории_продукта", //например, "businesscards-template"
+const container = document.getElementById('editorContainer');
+const designEditorConfig = {
+    product: {
+        productUrlName: "идентификатор_продукта", //например, "50x90-one-sided"
+        categoryUrlName: "идентификатор_категории_продукта", //например, "businesscards-template"
+    },
+    auth: {
+        getToken: () => {
+            return new Promise((resolve, reject) => {
+                var token = prompt('Enter user auth token:');
+                if (token.length > 0)
+                    resolve(token);
+                else
+                    reject();
+            })
+        }
+    },
+    ui: {
+        layoutMode: "auto",
+        //header: null
+    },
+    events: {
+        onError: (error) => { onPxpError(error); },
+        onReady: () => {
+            console.log("Editor ready");
+            container.classList.remove("loading-wheel")
+            console.log("Current user", window.editor.userInfo);
         },
-        auth: {
-            getToken: () => {
-                return new Promise((resolve, reject) => {
-                    var token = prompt('Enter user auth token:');
-                    if (token.length > 0)
-                        resolve(token);
-                    else
-                        reject();
-                })
+        onCartItemCreated: (response) => {
+            var confirm = window.confirm(`Положили товар: ${response.shoppingCartItemId}. Перейти в корзину?`);
+            if (confirm) {
+                window.location.href = originUrl + response.redirectUrl;
             }
         },
-        ui: {
-            layoutMode: "auto",
-            //header: null
-        },
-        events: {
-            onError: (error) => { onPxpError(error); },
-            onReady: () => {
-                console.log("Editor ready");
-                container.classList.remove("loading-wheel")
-                console.log("Current user", window.editor.userInfo);
-            },
-            onCartItemCreated: (response) => {
-                var confirm = window.confirm(`Положили товар: ${response.shoppingCartItemId}. Перейти в корзину?`);
-                if (confirm) {
-                    window.location.href = originUrl + response.redirectUrl;
-                }
-            },
-            onPriceChanged: (newPrice) => {
-                console.log("New price recieved", newPrice);
-                document.getElementById("externalPrice").innerHTML = newPrice.totalPriceString
-            }
-        },
-    }
-
-    // Обработчик ошибок
-    function onPxpError(error) {
-        container.classList.remove("loading-wheel")
-        container.classList.add("error")
-        const errorDiv = document.createElement("div");
-        errorDiv.className = "error-message"
-        errorDiv.innerText = error;
-        container.appendChild(errorDiv)
-    }
-
-    // Этот код вызывается после загрузки скрипта редактора
-    function onPxpLoaded() {
-        var editor = pxp.external.createDesignEditor(container, designEditorConfig);
-        editor.render();
-        window.editor = editor;
-    }
+        onPriceChanged: (newPrice) => {
+            console.log("New price recieved", newPrice);
+            document.getElementById("externalPrice").innerHTML = newPrice.totalPriceString
+        }
+    },
+}
+// Обработчик ошибок
+function onPxpError(error) {
+    container.classList.remove("loading-wheel")
+    container.classList.add("error")
+    const errorDiv = document.createElement("div");
+    errorDiv.className = "error-message"
+    errorDiv.innerText = error;
+    container.appendChild(errorDiv)
+}
+// Этот код вызывается после загрузки скрипта редактора
+function onPxpLoaded() {
+    var editor = pxp.external.createDesignEditor(container, designEditorConfig);
+    editor.render();
+    window.editor = editor;
+}
 ```
+
 > Скрипт необходимо расположить после скрипта загрузки редактора.
 
 ### Обработка результата работы редактора
 * Результатом работы редактора является добавленный в корзину продукт. Также необходимо реализовать хэндлер `onCartItemCreated` для определения дальнейших действий после добавления продукта в корзину.
 
 ## Описание конфигурационного файла
+
 ```js
-    interface IDesignEditorConfig {   
-        // Конфигуратор интерфейса редактора 
-        ui?: {
-            // Задает тип интерфейса: обычный или мобильный
-            // Возможные значения: "auto", "desktop", "mobile"
-            // Значение по умолчанию: "auto"
-            layoutMode: "auto" | "desktop" | "mobile" | null;
+interface IDesignEditorConfig {
+    // Конфигуратор интерфейса редактора 
+    ui?: {
+        // Задает тип интерфейса: обычный или мобильный
+        // Возможные значения: "auto", "desktop", "mobile"
+        // Значение по умолчанию: "auto"
+        layoutMode: "auto" | "desktop" | "mobile" | null;
 
-            // Выводит предупреждение при покидании страницы
+        // Выводит предупреждение при покидании страницы
+        // Значение по умолчанию: true
+        captureWindowUnload?: boolean;
+
+        // Настройка верхней панели редактора. При значении null панель не выводится.
+        header?: {
+            // Отображать кнопку домой
             // Значение по умолчанию: true
-            captureWindowUnload?: boolean;
+            homeButton?: boolean;
 
-            // Настройка верхней панели редактора. При значении null панель не выводится.
-            header?: {
-                // Отображать кнопку домой
-                // Значение по умолчанию: true
-                homeButton?: boolean;
+            // Изображение для кнопки домой. Если значение не указано или равно null будет установлен логотип из настройки сайта
+            // Значение по умолчанию: null
+            homeButtonImageUrl?: string | null;
 
-                // Изображение для кнопки домой. Если значение не указано или равно null будет установлен логотип из настройки сайта
-                // Значение по умолчанию: null
-                homeButtonImageUrl?: string | null;
+            // Отображение хлебных крошек
+            // Значение по умолчанию: true
+            breadCrumbs?: boolean;
 
-                // Отображение хлебных крошек
-                // Значение по умолчанию: true
-                breadCrumbs?: boolean;
+            // Отображение кнопки "Сохранить"
+            // Значение по умолчанию: true
+            saveButton?: boolean;
 
-                // Отображение кнопки "Сохранить"
-                // Значение по умолчанию: true
-                saveButton?: boolean;
+            // Отображение кнопки "Предпросмотр"
+            // Значение по умолчанию: true
+            previewButton?: boolean;
 
-                // Отображение кнопки "Предпросмотр"
-                // Значение по умолчанию: true
-                previewButton?: boolean;
+            // Отображение кнопки "Заказать"
+            // Значение по умолчанию: true
+            addToCartButton?: boolean;
 
-                // Отображение кнопки "Заказать"
-                // Значение по умолчанию: true
-                addToCartButton?: boolean;
+            // Отображение цены в кнопке "Заказать"
+            // Значение по умолчанию: true
+            price?: boolean;
+        } | null;
+    },
 
-                // Отображение цены в кнопке "Заказать"
-                // Значение по умолчанию: true
-                price?: boolean;
-            } | null;
-        }, 
-        
-        // События редактора
-        events?: {
-            // Вызывается после того, как товар был добавлен в корзину.
-            onCartItemCreated?: (state: { redirectUrl: string; shoppingCartItemId: number;} ) => void,
+    // События редактора
+    events?: {
+        // Вызывается после того, как товар был добавлен в корзину.
+        onCartItemCreated?: (state: { redirectUrl: string; shoppingCartItemId: number; }) => void,
 
-            // Вызывается при изменениях в редакторе
-            onStateChanged?: (event: HistoryEvent) => void,
+        // Вызывается при изменениях в редакторе
+        onStateChanged?: (event: HistoryEvent) => void,
 
-            // Вызывается после того как редактор загружен и готов к работе
-            onReady?: () => void,
+        // Вызывается после того как редактор загружен и готов к работе
+        onReady?: () => void,
 
-            // Вызывается при изменении цены
-            onPriceChanged?: (newPrice: { totalPrice: number; totalPriceString: string; quantity: number; }) => void,
+        // Вызывается при изменении цены
+        onPriceChanged?: (newPrice: { totalPrice: number; totalPriceString: string; quantity: number; }) => void,
 
-            // Вызывается при возникновении непредвиденной ошибки
-            onError?: (error: string) => void,
-        },
+        // Вызывается при возникновении непредвиденной ошибки
+        onError?: (error: string) => void,
+    },
 
-        // Настройка товара
-        product: {
-            // ID продукта. Можно указать ID либо categoryUrlName и productUrlName
-            id?: number,
+    // Настройка товара
+    product: {
+        // ID продукта. Можно указать ID либо categoryUrlName и productUrlName
+        id?: number,
+        // Количество разворотов у продукта
+        pages?: number,
 
-            // Часть URL категории товара
-            categoryUrlName?: string,
+        // Часть URL категории товара
+        categoryUrlName?: string,
 
-            // Часть URL товара
-            productUrlName?: string,
+        // Часть URL товара
+        productUrlName?: string,
 
-            // Кол-во товара. При отсутствии значения редактор устанавливает кол-во по умолчанию
-            quantity?: number,
+        // Кол-во товара. При отсутствии значения редактор устанавливает кол-во по умолчанию
+        quantity?: number,
 
-            // Внешняя калькуляция цены. При самостоятельном расчете цены необходимо реализовать этот метод
-            // Метод необходимо вызвать, когда нужно отобразить цену
-            calculatePrice?: (state: IVectorEditorPriceCalculatorInfo) => Promise<{ totalPrice: number; totalPriceString: string; quantity: number; }>,
-            
-            // Загрузка дизайна
-            design: {
-                // ID шаблона для загрузки при инициализации
-                templateId?: number;
+        // Внешняя калькуляция цены. При самостоятельном расчете цены необходимо реализовать этот метод
+        // Метод необходимо вызвать, когда нужно отобразить цену
+        calculatePrice?: (state: IVectorEditorPriceCalculatorInfo) => Promise<{ totalPrice: number; totalPriceString: string; quantity: number; }>,
 
-                // Состояние которое необходимо загрузить. Например, элемент корзины или сохраненный дизайн
-                state?: IDesignEditorState | null,
-            }
-        }
+        // Загрузка дизайна
+        design: {
+            // ID шаблона для загрузки при инициализации
+            templateId?: number;
 
-        // Аутентификация
-        auth: {
-            // Этот метод будет вызван если не задан userToken и необходим зарегистрированный пользователь
-            getToken: () => Promise<string>,
-
-            // Токен зарегистрированного пользователя
-            // При его указании редактор попробует войти под этим токеном
-            // Если не получится, редактор завершит работу с ошибкой
-            userToken?: string,
+            // Состояние которое необходимо загрузить. Например, элемент корзины или сохраненный дизайн
+            state?: IDesignEditorState | null,
         }
     }
+
+    // Аутентификация
+    auth: {
+        // Этот метод будет вызван если не задан userToken и необходим зарегистрированный пользователь
+        getToken: () => Promise<string>,
+
+        // Токен зарегистрированного пользователя
+        // При его указании редактор попробует войти под этим токеном
+        // Если не получится, редактор завершит работу с ошибкой
+        userToken?: string,
+    }
+}
 ```
+
+## Действия после осуществления заказа
+* После оформления заказа осуществляется рендеринг его файлов. При необходимости, возможно настроить уведомление о его завершении при помощи [вебхуков](/dev/api#Работа-с-Вебхуками).
+* Для этого в подразделе "__Настройка вебхуков__" раздела "__Маргетинг / Уведомления__" в панели управления Pixlpark необходимо добавить вебхук для события "__Заказ: статус рендеринга изменен__" и указать URL для отправления запроса.
+![](../_media/dev/editor-webhook.png)
