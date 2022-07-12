@@ -114,8 +114,7 @@
     + __App Name__ - название приложения;
     + __Refresh Token__ - полученный "Refresh Token";
     + __Путь до заказа на Google Диск__ - путь папки, созданной для хранения заказов.
- 
-![](../_media/integration/drive14.png ':size=70%')
+* ![](../_media/integration/drive14.png ':size=70%')
 * Далее, нажать кнопку "__Сохранить__" и сбросить кэш сайта.
 
 ## Dropbox 
