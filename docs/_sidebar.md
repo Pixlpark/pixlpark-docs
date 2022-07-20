@@ -33,7 +33,7 @@
 
 - Настройка
 	- [Регион](/site/region.md)
-	- [Доменны](/site/domains.md)
+	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
 	- [Доставка](/site/shippings.md)
 	- [Оплата](/site/payments.md)
