@@ -90,6 +90,7 @@
     3. [Описание конфиругационного файла](/dev/editor?id=Получение-файлов-к-печати).
 
 ### Подготовка страницы внешнего сайта
+#### Подготовка страницы внешнего сайта для встраивания редактора для одного продукта
 * Для встраивания редактора на страницу внешнего сайта необходимо создать контейнер согласно коду
 ```html
     <div id="editorContainer" class="editor-container loading-wheel"></div>
@@ -116,11 +117,57 @@
 ```
 * Затем, добавить скрипт для загрузки редактора на страницу внешнего сайта.
 ```js
-    <script async src="https://ваш-сайт-в-Pixlpark/api/externalEditor/js" onerror="onPxpError('Error while loading init script')" onload="onPxpLoaded()"></script>
+    <script src="https://ваш-сайт-в-Pixlpark/api/externalEditor/js" onerror="onPxpError('Error while loading init script')" onload="onPxpLoaded()"></script>
 ```
 > Скрипт необходимо расположить ближе к подвалу в разметке страницы.
 
+#### Подготовка страницы внешнего сайта для встраивания редактора для нескольких продуктов
+* Для встраивания редактора с несколькими продуктами на страницу внешнего сайта необходимо создать разметку согласно коду
+```html
+    <fieldset id="materialSelector" class="editor-products">
+        <label class="editor-products__label">
+            <input type="radio" name="editor" value="ID" checked> <!-- ID - id продукта 1-->
+            Продукт 1
+        </label>
+
+        <label class="editor-products__label">
+            <input type="radio" name="editor" value="ID"> <!-- ID - id продукта 2-->
+            Продукт 2
+        </label>
+    </fieldset>
+    <div id="editorContainer" class="editor-container loading-wheel"></div>
+```
+* и добавить еe в разметку страницы внешнего сайта. Редактор заполнит весь размер контейнера.
+* Далее, добавить на страницу стилевые правила: 
+```css
+ .btn {background: #fff;border: solid 1px #ccc !important;box-shadow: #ddd 0 0 3px;color: #000 !important;}
+
+ body {font-family: sans-serif;padding: 10px 40px}
+ @keyframes cssload-spin {100% {transform: rotate(360deg);transform: rotate(360deg)}}
+
+ .editor-products {box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:baseline;padding:10px}
+ .editor-products__label {margin: 0 15px}
+
+ .editor-container.error {border: solid 1px #983a3a;box-shadow: #e15959 0 0 3px;}
+ .editor-container .error-message {position: relative;margin: 20px;text-align: left;color: #000000;font-family: monospace;
+            z-index: 1000000000;background: #ffcece;padding: 10px 20px;border: solid 1px #a52020;}
+ .editor-container {width: 65%; height: 600px; position: relative; border: solid 1px #ccc; box-shadow: #efefef 0 0 14px;}
+ .loading-wheel:before {
+        position:absolute;top:50%;left:50%;content:'';z-index:1112;display:block;width:32px;height:32px;margin:-16px 0 0 -16px;
+        border: 2px solid rgb(117,117,117);border-radius: 50%;border-left-color: transparent;border-right-color: transparent;
+        animation: cssload-spin 500ms infinite linear;
+  }
+ .loading-wheel:after{position:absolute;top:0;left:0;bottom:0;right:0;content:'';background:#fff;z-index:1111;opacity:.9;display:block}
+```
+* Затем, добавить скрипт для загрузки редактора на страницу внешнего сайта.
+```js
+    <script src="https://ваш-сайт-в-Pixlpark/api/externalEditor/js" onerror="onPxpError('Error while loading init script')"></script>
+```
+> Скрипт необходимо расположить ближе к подвалу в разметке страницы.
+
+
 ### Определение конфигурации редактора
+#### Опреределение конфигурации редактора для одного продукта
 * Определить конфигурацию редактора на странице внешнего сайта необходимо при помощи кода:
 ```js
 const container = document.getElementById('editorContainer');
@@ -178,6 +225,80 @@ function onPxpLoaded() {
     editor.render();
     window.editor = editor;
 }
+```
+> Скрипт необходимо расположить после скрипта загрузки редактора.
+
+#### Опреределение конфигурации редактора для нескольких продуктов
+* Определить конфигурацию редактора на странице внешнего сайта необходимо при помощи кода:
+```js
+    function initEditor(materialId) {
+        const container = document.getElementById('editorContainer');
+        const designEditorConfig = {
+        product: {
+            id: materialId, 
+            design: {
+            },
+        },
+        auth: {
+            getToken: () => {
+                return new Promise((resolve, reject) => {
+                    var token = prompt('Enter user auth token:');
+                    if (token.length > 0)
+                        resolve(token);
+                    else
+                        reject();
+                })
+            }
+        },
+        ui: {
+            layoutMode: "auto",
+            //header: null
+        },
+        events: {
+            onError: (error) => { onPxpError(error); },
+            onReady: () => {
+                console.log("Editor ready");
+                container.classList.remove("loading-wheel")
+                console.log("Current user", window.editor.userInfo);
+            },
+            onCartItemCreated: (response) => {
+                var confirm = window.confirm(`Положили товар: ${response.shoppingCartItemId}. Перейти в корзину?`);
+                if (confirm) {
+                    window.location.href = originUrl + response.redirectUrl;
+                }
+            },
+            onPriceChanged: (newPrice) => {
+                console.log("New price recieved", newPrice);
+                document.getElementById("externalPrice").innerHTML = newPrice.totalPriceString
+            }
+        },
+        };       
+        var editor = pxp.external.createDesignEditor(container, designEditorConfig);
+        editor.render();
+        window.editor = editor;
+    }
+// Обработчик ошибок
+function onPxpError(error) {
+    container.classList.remove("loading-wheel")
+    container.classList.add("error")
+    const errorDiv = document.createElement("div");
+    errorDiv.className = "error-message"
+    errorDiv.innerText = error;
+    container.appendChild(errorDiv)
+}
+// Изменение продукта в редакторе
+function updateMaterial(){
+			var fieldset = document.getElementById("materialSelector");
+			var materialId = [...fieldset.querySelectorAll("input")].find((input)=> input.checked).value;
+			if (materialId != null){
+				if (window.editor != null && window.editor.editor != null){
+					window.editor.editor.destroy();
+				}
+				initEditor(parseInt(materialId));
+			}	
+		}
+document.getElementById("materialSelector").addEventListener("change", updateMaterial);
+updateMaterial();
 ```
 
 > Скрипт необходимо расположить после скрипта загрузки редактора.
