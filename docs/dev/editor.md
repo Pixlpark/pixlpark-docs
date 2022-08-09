@@ -300,7 +300,6 @@ function updateMaterial(){
 document.getElementById("materialSelector").addEventListener("change", updateMaterial);
 updateMaterial();
 ```
-
 > Скрипт необходимо расположить после скрипта загрузки редактора.
 
 ### Описание конфигурационного файла
