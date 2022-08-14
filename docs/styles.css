@@ -501,10 +501,17 @@ table.laser-cutting-price td{font-size:13px;color:#354251;}
 table.laser-cutting-price td, table.laser-cutting-price th{white-space:pre-wrap;padding:10px 5px;line-height:13px;vertical-align: middle;border: 1px solid #354251;}
 table.laser-cutting-price tr:hover{background-color:#f9fafb}
 table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
-.markdown-section tr:nth-child(n){background-color: #eee;}
-.markdown-section tr:nth-child(2n-1){font-weight: 600;}
+.markdown-section tr:nth-child(n){background-color: transparent;}
+/* .markdown-section tr:nth-child(2n-1){font-weight: 600;} */
 .markdown-section tr:nth-child(2n){background-color: #fff;}
 .markdown-section tr td:nth-child(1){background-color: #fff;}
+.sheet-printing tbody  td{font-weight: 400; text-align: center;}
+.lang-formula {font-style: italic;}
+.sheet-printing-products {text-align: center;}
+.content .markdown-section pre.formula {display: flex;}
+.content .markdown-section pre.formula>code.lang-formula {padding: 20px 25px; white-space: normal; font-size: 0.9rem;}
+[data-page="calculators/sheet-printing.md"] ol li > ul li {list-style: none;}
+[data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul {padding-left: 0;}
 
 @media screen and (max-width:1400px) {
     header .logo-container,
