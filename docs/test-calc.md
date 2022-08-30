@@ -1,7 +1,7 @@
 ## Кулькулятор расчета стоимости листовой печати для визиток
 <div id="integratedCalculator"></div>
 <script>window.pxp.frontend = null</script>
-<script src="https://demo.pixlpark.ru/api/calc/externalCalc"></script>
+<script src="//demo.pixlpark.ru/api/calc/externalCalc"></script>
 <script>
   var container = document.getElementById("integratedCalculator");
   var params = { 
