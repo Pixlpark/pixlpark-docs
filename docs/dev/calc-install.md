@@ -41,9 +41,6 @@
 
 </details>
 
-
-
-
 <details>
 <summary>photolabId</summary>
 
