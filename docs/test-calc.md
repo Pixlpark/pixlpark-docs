@@ -14,6 +14,9 @@
     .url-businesscards #pxpProducCalc .material-selector>ul>li>ul>li a{width:150px;text-align:center;font-weight:400}
     .url-businesscards #pxpProducCalc .option-row.customWorkRadio .option-value label{width:150px}
     .url-businesscards #pxpProducCalc .option-value li>a{width:111px;text-align:center}
+    @media screen and (max-width: 1155px) {
+        #integratedCalculator{width:100%;}
+    }
     @media screen and (max-width: 768px) {
     .url-businesscards .block-address{margin-bottom:15px}
     }
@@ -161,4 +164,5 @@
     #integratedCalculator .currency.rub:before{content:"₽ ";font-size:1.06em}
     .url-businesscards #pxpProducCalc .pxp-circulation-selector ul li.circulation-selector__item.option-row {margin-bottom: 25px;}
     .url-businesscards #pxpProducCalc .custom-works__list .option-row:first-child {margin-bottom: 15px;}
+    #pxpProducCalc a.btn:last-child {display: none}
 </style>
