@@ -5,7 +5,14 @@
     let  params = { 
             materialType: "sheet-printing",
         };
-    let integrated = new PxpCalcManager(container, params);
+        let integrated = new PxpCalcManager(container, params);
+    if(window.innerWidth<=800){
+        window.onCompleteLoadPxpCalc = (calc) => {
+                calc.totalPriceCalculator.stickyBlock.isEnable(false)
+                calc.totalPriceCalculator.stickyBlock.isEnable.subscribe(val=>{
+                calc.totalPriceCalculator.stickyBlock.isEnable(false)})
+            }
+        }
 </script>
 <style>
     #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
@@ -102,7 +109,7 @@
     #pxpProducCalc .measure{margin-left:10px}
     #pxpProducCalc{position:relative;min-height:140px;margin-top:0}
     #pxpProducCalc .calc-lock{position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(255,255,255,.6);width:100%;height:100%;z-index:1}
-    #pxpProducCalc .calc-lock div{display:block;text-align:center;position:absolute;left:calc(50% - 125px);top:calc(50% - 55px);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);background:#fff;width:250px;height:110px;padding:10px;border:1px solid #ddd;border-radius:5px;box-shadow:0 0 10px 1px rgba(0,0,0,.2)}
+    #pxpProducCalc .calc-lock div{display:block;text-align:center;position:absolute;left:calc(50% - 125px);top:calc(50% - 55px);-ms-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);background:#fff;width:250px;height:110px;padding:10px;border:1px solid #ddd;border-radius:5px;box-shadow:0 0 10px 1px rgba(0,0,0,.2)}
     #pxpProducCalc .calc-lock div span{margin-top:55px;display:block}
     #pxpProducCalc .calc-lock div:before{content:"";animation:a 1s linear infinite;border:4px solid #eee;border-left-color:#64bb46;border-radius:50%;display:inline-block;margin:-40px 0 0 -20px;height:40px;width:40px;left:50%;top:50%;position:absolute}
     #pxpProducCalc .custom-works ul li.customWorkCheckbox ul li .checkbox span[data-bind="template:{name:template}"] input[type=checkbox]{width:0;display:none}
@@ -159,7 +166,9 @@
     .url-businesscards #pxpProducCalc .pxp-circulation-selector ul li.circulation-selector__item.option-row {margin-bottom: 25px;}
     .url-businesscards #pxpProducCalc .custom-works__list .option-row:first-child {margin-bottom: 15px;}
     #pxpProducCalc a.btn:last-child {display: none}
-        @media screen and (max-width: 1055px) {
+    sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+    sup {top: -0.5em;}
+    @media screen and (max-width: 1055px) {
         #integratedCalculator {width:50%; min-width: 400px;}
     }
     @media (max-width: 992px) {
