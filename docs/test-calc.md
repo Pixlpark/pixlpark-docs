@@ -6,13 +6,13 @@
             materialType: "sheet-printing",
         };
         let integrated = new PxpCalcManager(container, params);
-    if(window.innerWidth<=800){
-        window.onCompleteLoadPxpCalc = (calc) => {
-                calc.totalPriceCalculator.stickyBlock.isEnable(false)
-                calc.totalPriceCalculator.stickyBlock.isEnable.subscribe(val=>{
-                calc.totalPriceCalculator.stickyBlock.isEnable(false)})
-            }
-        }
+    // if(window.innerWidth<=800){
+    //     window.onCompleteLoadPxpCalc = (calc) => {
+    //             calc.totalPriceCalculator.stickyBlock.isEnable(false)
+    //             calc.totalPriceCalculator.stickyBlock.isEnable.subscribe(val=>{
+    //             calc.totalPriceCalculator.stickyBlock.isEnable(false)})
+    //         }
+    //     }
 </script>
 <style>
     #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
@@ -152,7 +152,6 @@
     #pxpProducCalc .option-row input#txtPartsQuantity,#pxpProducCalc .option-row input#integratedCalculator-txtQuantity{float:left;display:block;margin-top:0;width:180px}
     #pxpProducCalc .option-row .option-value input#txtQuantity-for-calc2,#pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity{position:relative;width:180px;font-weight:700;min-height:39px}
     #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity+span.measure{float:left;margin-top:9px;font-weight:700;font-size:14px}
-    /* .pxp-total-price .btn{margin-left:15px} */
     #pxpProducCalc .pxp-calculator .pxp-total-price .totalPriceContainer,#pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer+.buttons{margin:0 0 10px}
     #pxpProducCalc .buttons .ok,#pxpProducCalc .buttons .ok-disabled{display:inline-block}
     #pxpProducCalc a.btn:active{background:0 0 #64bb46;box-shadow:1px 1px 1px #18410a inset}
@@ -168,6 +167,32 @@
     #pxpProducCalc a.btn:last-child {display: none}
     sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
     sup {top: -0.5em;}
+    #pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer, #pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer+.buttons{position:relative;width:auto;margin:0;padding:0;display: inline-block;vertical-align: middle;float:none;}
+    #pxpProducCalc .pxp-circulation-selector ul{padding:0;margin-top:10px}
+    #pxpProducCalc .option-row .option-value label input{padding:6px 12px;margin-top:10px;outline:none}
+    #pxpProducCalc.pxp-calculator .pxp-total-price>div,.order-button{text-align:right}
+    #totalPriceContainer,.totalPriceContainer{padding:20px 0;text-align:right;font-size:20pt;width:100%;float:right}
+    .currency.rub{font-family:'Helvetica Neue','Arial';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;width:auto;font-size:.95em;border:none 0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    .currency.rub.postfix{margin:0}
+    #pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer,#pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer+.buttons{margin:0 0 10px}
+    #pxpProducCalc.pxp-calculator .pxp-total-price .totalPriceContainer+.buttons a{margin-bottom:0;}
+    .buttons{padding:10px 0;text-align:right}
+    .pxp-total-price .btn{margin-left: 15px;}
+    .pxp-total-price.sticky-visible{z-index:2}
+    .pxp-total-price.sticky-visible,.pxp-total-price.sticky-hidden{position:fixed;top:auto;right:auto;bottom:0;}
+    .pxp-total-price.sticky-visible{visibility:visible;}
+    .pxp-total-price.sticky-hidden,.pxp-total-price.sticky-hidden *{visibility:hidden; transition:none;}
+    .pxp-total-price .sticky-block{border-top:1px solid #bbbdbe;background:#eee;margin:0 -30px;padding:0;position:relative;height: 65px;}
+    .pxp-total-price .sticky-block .info{display: flex;justify-content: flex-end;margin:0 30px;text-align:right;position:absolute;right:0;padding:0;left:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+    .pxp-total-price .sticky-block .info .totalQuantityBlock{font-size:18px;position:absolute;left:0;right:auto;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%)}
+    .totalPriceContainer .price-per-item:before{content:'('}
+    .totalPriceContainer .price-per-item:after{content:')'}
+    .currency.rub span{display:none}
+    #pxpProducCalc.pxp-calculator .pxp-total-price .sticky-block .totalPriceContainer+.buttons .ok {display: flex;padding-right:5px;}
+    #pxpProducCalc .pxp-total-price .sticky-block a.btn {font-size: 14px;}
+    .pxp_calc_quick_order_manager_block .pxp_calc_quick_order_manager_block_info_text:before, .pxp-quick-order-widget .pxp-quick-order-widget-wrapper-mobile__message:before {content: '!';position: absolute;left: 0;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);font-size: 42px;color: #64bb46;line-height: 20px;}
+    .pxp_calc_quick_order_manager_block {margin: 15px 0 0 0;padding: 15px 0 0 0;border-top: solid 1px #bbbdbe;}
+    .pxp_calc_quick_order_manager_block .pxp_calc_quick_order_manager_block_info_text, .pxp-quick-order-widget .pxp-quick-order-widget-wrapper-mobile__message {position: relative;display: block;padding: 0 0 0 20px;font-size:14px}
     @media screen and (max-width: 1055px) {
         #integratedCalculator {width:50%; min-width: 400px;}
     }
@@ -177,6 +202,9 @@
     @media screen and (max-width: 800px) {
         #integratedCalculator {width: 100%; min-width: auto;}
     }
+    @media screen and (max-width: 600px) {
+    .totalPriceContainer {font-size: 20px;}
+    }
     @media screen and (max-width: 768px) {
         .url-businesscards .block-address{margin-bottom:15px}
         .pxp-total-price .sticky-block{height:55px}
@@ -185,11 +213,23 @@
         .url-businesscards #pxpProducCalc .material-selector>ul>li>ul>li a{width:135px}
         .url-businesscards #pxpProducCalc ul li.customWorkRadio:first-child .option-value label,.url-businesscards #pxpProducCalc ul li.customWorkRadio:nth-child(2) .option-value label{width:135px}
     }
-    @media (max-width: 414px) {
+    @media screen and (max-width: 530px) {
+        .buttons{text-align:right}
+        .buttons .ok,.buttons .ok-disabled{margin-top:0}
+    } 
+    @media screen and (max-width: 490px) {
+        #pxpProducCalc .totalPriceContainer{width:100%; font-size: 16px;}
+        .pxp-total-price .btn {margin-left: 0px;}
+    }  
+    @media screen and (max-width: 414px) {
+        #pxpProducCalc{padding:15px}
+        #pxpProducCalc .totalPriceContainer{font-size:10pt}
         .pxp-total-price .sticky-block .info {margin: 0 10px;}
         #pxpProducCalc.pxp-calculator .pxp-total-price .sticky-block .totalPriceContainer{font-size:14pt}
     }
-    @media (max-width: 340px) {
+    @media screen and (max-width: 340px) {
         #pxpProducCalc.pxp-calculator .pxp-total-price .sticky-block .totalPriceContainer{font-size:10pt}
+        #pxpProducCalc{padding:15px}
+        #pxpProducCalc .totalPriceContainer{font-size:10pt}
     }
 </style>
