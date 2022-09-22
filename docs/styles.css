@@ -866,3 +866,8 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
     .content .markdown-section pre>code.lang-html{
         white-space:inherit;
     }
+    [data-page="dev/calc.md"] .content .markdown-section h2[id="Размеры-редактора"],
+    [data-page="dev/calc.md"] .content .markdown-section h2[id="Опции-и-позиции"],
+    [data-page="dev/calc.md"] .content .markdown-section h2[id="Переменные"],
+    [data-page="dev/calc.md"] .content .markdown-section h2[id="Ценовая-панель"],
+    [data-page="dev/calc-install.md"] .content .markdown-section h2[id="_3-Инициализация-калькулятора"] {margin-top: 0px!important;}
