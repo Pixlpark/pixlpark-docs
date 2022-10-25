@@ -132,6 +132,7 @@
 	- [Лазерная резка](/calculators/laser-cutting.md)
 	- [Нанесение на бизнес-сувениры](/calculators/gift.md)
 	- [Широкоформатная печать](/calculators/large-format-printing.md)
+	- [Печать документов](/calculators/document-printing.md)
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
