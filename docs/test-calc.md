@@ -1,9 +1,9 @@
 ## Кулькулятор расчета стоимости листовой печати для визиток
-<div id="integratedCalculator" class="url-businesscards" style="position: relative; min-height: 150px;"></div>
+<div id="integratedCalculator" class="url-document-printing" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");
     let  params = { 
-            materialType: "sheet-printing",
+            materialType: "document-printing",
         };
         let integrated = new PxpCalcManager(container, params);
     // if(window.innerWidth<=800){
