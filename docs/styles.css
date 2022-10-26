@@ -892,3 +892,4 @@ header .header-link {
 [data-page="dev/calc.md"] .content .markdown-section h2[id="Переменные"],
 [data-page="dev/calc.md"] .content .markdown-section h2[id="Ценовая-панель"],
 [data-page="dev/calc-install.md"] .content .markdown-section h2[id="_3-Инициализация-калькулятора"] {margin-top: 0px!important;}
+[data-page="integration/payments.md"] .content .markdown-section>ul>li>ul>li ul{list-style:none;padding-left:0}
