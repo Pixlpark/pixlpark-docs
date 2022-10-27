@@ -6,6 +6,7 @@
 	- [Карточка заказа](/orders/edit.md)
 	- [Список заказов](/orders/list.md)
 	- [Создание заказа](/orders/create.md)
+	- [Создание шаблона заказа](/orders/create-order-template.md)
 	- [Статистика](/orders/report.md)
 	- [Экспорт](/orders/export.md)
 	- [Настройка](/orders/settings.md)
@@ -13,6 +14,7 @@
 - Клиенты
 	- [Частные лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
+	<!-- - [Группы](/customers/groups.md) -->
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
