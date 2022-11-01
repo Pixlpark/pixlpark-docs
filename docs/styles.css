@@ -512,7 +512,8 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
 .content .markdown-section pre.formula>code.lang-formula {padding: 20px 25px; white-space: normal; font-size: 0.9rem;}
 [data-page="calculators/sheet-printing.md"] ol li > ul li, [data-page="calculators/document-printing.md"] ol li > ul li {list-style: none;}
 [data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul, [data-page="calculators/document-printing.md"] .markdown-section ol li > ul {padding-left: 0;}
-[data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote {margin: 2em 0 0;}
+[data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote, [data-page="calculators/laser-cutting.md"] h3 + blockquote, [data-page="calculators/laser-cutting.md"] h4 + blockquote {margin: 2em 0 0;}
+.content .markdown-section blockquote p {margin: 5px 0}
 #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
 #integratedCalculator a,#integratedCalculator u{text-decoration:none;border-bottom:none;transition:.3s;line-height:1.5}
 #integratedCalculator ul{padding:0 0 0 20px;margin:0;width:100%}
@@ -699,6 +700,8 @@ sup {top: -0.5em;}
 .url-document-printing #pxpProducCalc .option-row.customWorkRadio .option-value label {width: 150px;}
 .url-document-printing #pxpProducCalc .material-selector > ul > li > ul > li a, .url-document-printing #pxpProducCalc .option-value li > a {width: 150px; text-align: center;}
 .url-document-printing #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity{width: 150px;}
+.url-laser-cutting #pxpProducCalc .option-value.list-inline li.zero.checkbox{ display: none!important;}
+.url-laser-cutting #pxpProducCalc .inline-checkbox ul.option-value.list-inline {min-height: 0;}
 @media screen and (max-width:1400px) {
 header .logo-container,
 header.fixedHeader .logo-container {

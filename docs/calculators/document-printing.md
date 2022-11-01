@@ -1254,7 +1254,7 @@
 * После внесения данных подраздел "__Позиции__" опции "__Заполненность краской (печать документов)__" выглядит следующим образом:
 ![](../_media/calc/document-printing_117.png)
 
-## Кулькулятор расчета печати документов
+## Калькулятор расчета печати документов
 <div id="integratedCalculator" class="url-document-printing" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");

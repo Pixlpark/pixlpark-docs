@@ -1100,7 +1100,7 @@
 * После внесения всех данных подраздел "__Позиции__" опции "__Срок исполнения (Визитки)__" выглядит следующим образом:
 ![](../_media/calc/sheet-printing_83.png)
 
-## Кулькулятор расчета стоимости листовой печати для визиток
+## Калькулятор расчета стоимости листовой печати для визиток
 <div id="integratedCalculator" class="url-businesscards" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");
