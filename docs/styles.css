@@ -515,7 +515,8 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
 [data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote, [data-page="calculators/laser-cutting.md"] h3 + blockquote, [data-page="calculators/laser-cutting.md"] h4 + blockquote {margin: 2em 0 0;}
 .content .markdown-section blockquote p {margin: 5px 0}
 #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
-#integratedCalculator a,#integratedCalculator u{text-decoration:none;border-bottom:none;transition:.3s;line-height:1.5}
+#integratedCalculator a,#integratedCalculator u{text-decoration:none;border-bottom:none;line-height:1.5}
+#integratedCalculator a{transition:.3s;}
 #integratedCalculator ul{padding:0 0 0 20px;margin:0;width:100%}
 .url-businesscards #pxpProducCalc .material-selector>ul>li>ul>li a{width:150px;text-align:center;font-weight:400}
 .url-businesscards #pxpProducCalc .option-row.customWorkRadio .option-value label{width:150px}
@@ -701,7 +702,21 @@ sup {top: -0.5em;}
 .url-document-printing #pxpProducCalc .material-selector > ul > li > ul > li a, .url-document-printing #pxpProducCalc .option-value li > a {width: 150px; text-align: center;}
 .url-document-printing #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity{width: 150px;}
 .url-laser-cutting #pxpProducCalc .option-value.list-inline li.zero.checkbox{ display: none!important;}
-.url-laser-cutting #pxpProducCalc .inline-checkbox ul.option-value.list-inline {min-height: 0;}
+.url-laser-cutting #pxpProducCalc .inline-checkbox ul.option-value.list-inline {min-height: 0; display: none}
+.calc-variable span[data-bind="html: title"] {font-weight: 600; font-size: 16px; color: #364657;}
+.url-laser-cutting .custom-works__item.inline-checkbox.option-row.customWorkRadio.alone .zero {outline: 1px solid red; margin-right: 0;}
+.url-laser-cutting li.inline-checkbox.option-row ul.option-value.list-inline {display: none !important;}
+.url-laser-cutting li.inline-checkbox.option-row ul.option-value.list-inline li.option-item.selected span.checkbox {display: none !important;}
+.url-laser-cutting li.custom-works__item.inline-checkbox.option-row span.option-label.required {display: none !important;}
+.url-laser-cutting li.custom-works__item.inline-checkbox.option-row ul li.calc-variable span:first-child {font-weight: 600; font-size: 16px; color: #364657;}
+.url-laser-cutting .calc-variable .text {padding: 4px; max-width: 170px;}
+.url-laser-cutting .pxp-calc-fileUpload-link__text {font-size: 0.875rem;}
+.url-laser-cutting #pxpProducCalc > div.pxp-custom-works-selector > div > div > ul > li.custom-works__item.upload-for-order.option-row.customWorkRadio.alone > ul > li > span.checkbox {display: none;}
+.url-laser-cutting #pxpProducCalc .material-selector > ul > li > ul > li a,.url-laser-cutting #pxpProducCalc .option-value li > a{width:150px; text-align: center;}
+.url-laser-cutting #pxpProducCalc .option-row.customWorkRadio .option-value label{width:150px;padding:4px}
+.url-laser-cutting .pxp-calc-fileUpload-link {width: 152px;text-align: center; padding: 3px 15px!important;}
+#pxpProducCalc input:focus {outline: solid 1px #D7C500;outline-style: auto;}
+
 @media screen and (max-width:1400px) {
 header .logo-container,
 header.fixedHeader .logo-container {
