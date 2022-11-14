@@ -43,15 +43,15 @@
     + __Email address__ в подразделе __Developer contact information__ - электронная почта компании.
 * Затем нужно сохранить внесенные изменения, нажав кнопку "__SAVE AND CONTINUE__". Закончить создание приложения, пройдя этапы, не требующие обязательного внесения дополнительных данных.
 * По завершению будет создано приложение в тестовом режиме без публичного доступа. Для перевода приложения в боевой режим необходимо в разделе "__APIs & Services__ &rarr; __OAuth consent screen__" изменить статус приложения "__Publishing status__" на "__PUBLISH APP__".
-![](../_media/integration/google05.jpg ':size=70%')
+![](../_media/integration/google07.jpg ':size=50%')
 * После этого для создания ключей доступа к приложению нужно перейти в раздел "__APIs & Services__ &rarr; __Credentials__", нажать кнопку "__+ CREATE CREDENTIALS__" и выбрать подпункт "__OAuth client ID__".
-![](../_media/integration/google06.png ':size=40%')
+![](../_media/integration/google05.jpg ':size=70%')
 * На открывшейся странице нужно заполнить поля:
     + __Application type__ - тип приложения (выбрать "__Web application__");
     + __Name__ - название сайта;
     + __Authorized redirect URIs__ - адрес страницы `https://ваш-сайт/account/login/google`.
 * Затем нажать кнопку "__CREATE__" и создать "__OAuth client ID__", после чего будет отображено окно с ключами доступа.
-![](../_media/integration/google07.jpg ':size=50%')
+![](../_media/integration/google06.png ':size=50%')
 * Параллельно необходимо открыть в панели управления Pixlpark раздел "__Настройка / Сервисы__" и включить "__Google__".
 ![](../_media/integration/google08.png ':size=70%')
 * Затем нужно скопировать поля из Google в Pixlpark:
