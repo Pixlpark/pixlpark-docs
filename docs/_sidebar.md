@@ -14,7 +14,7 @@
 - Клиенты
 	- [Частные лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
-	<!-- - [Группы](/customers/groups.md) -->
+	- [Группы](/customers/groups.md)
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
