@@ -121,7 +121,7 @@
 	- [Язык разметки Scriban](/dev/scriban.md)
 	
 - Дизайнерам
-	- [Общая информация о PSD шаблонах](/design/psd-general.md)
+	- [Общая информация о PSD-шаблонах](/design/psd-general.md)
 	- [PSD-шаблоны для листовой печати](/design/businesscards.md)
 	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
 	- [PSD-шаблоны для календарей](/design/calendars.md)
