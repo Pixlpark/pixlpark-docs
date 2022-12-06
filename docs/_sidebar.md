@@ -92,6 +92,7 @@
 	- [Дизайн](/app/design.md)
 	- [Локализация](/app/localization.md)
 	- [Сайты](/app/shop.md)
+
 - Профиль
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)
@@ -120,6 +121,7 @@
 	- [Язык разметки Scriban](/dev/scriban.md)
 	
 - Дизайнерам
+	- [Общая информация о PSD шаблонах](/design/psd-general.md)
 	- [PSD-шаблоны для листовой печати](/design/businesscards.md)
 	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
 	- [PSD-шаблоны для календарей](/design/calendars.md)
@@ -135,6 +137,9 @@
 	- [Нанесение на бизнес-сувениры](/calculators/gift.md)
 	- [Широкоформатная печать](/calculators/large-format-printing.md)
 	- [Печать документов](/calculators/document-printing.md)
+
+- Редакторы
+	- [Редактор дизайнов](/editors/design.md)
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
