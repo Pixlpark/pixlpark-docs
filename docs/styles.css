@@ -510,8 +510,8 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
 .sheet-printing-products {text-align: center;}
 .content .markdown-section pre.formula {display: flex;}
 .content .markdown-section pre.formula>code.lang-formula {padding: 20px 25px; white-space: normal; font-size: 0.9rem;}
-[data-page="calculators/sheet-printing.md"] ol li > ul li, [data-page="calculators/document-printing.md"] ol li > ul li {list-style: none;}
-[data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul, [data-page="calculators/document-printing.md"] .markdown-section ol li > ul {padding-left: 0;}
+[data-page="calculators/sheet-printing.md"] ol li > ul li, [data-page="calculators/document-printing.md"] ol li > ul li, [data-page="calculators/price-printing.md"] ol li > ul li {list-style: none;}
+[data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul, [data-page="calculators/document-printing.md"] .markdown-section ol li > ul, [data-page="calculators/price-printing.md"] .markdown-section ol li > ul {padding-left: 0;}
 [data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote, [data-page="calculators/laser-cutting.md"] h3 + blockquote, [data-page="calculators/laser-cutting.md"] h4 + blockquote {margin: 2em 0 0;}
 .content .markdown-section blockquote p {margin: 5px 0}
 #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
@@ -716,6 +716,23 @@ sup {top: -0.5em;}
 .url-laser-cutting #pxpProducCalc .option-row.customWorkRadio .option-value label{width:150px;padding:4px}
 .url-laser-cutting .pxp-calc-fileUpload-link {width: 152px;text-align: center; padding: 3px 15px!important;}
 #pxpProducCalc input:focus {outline: solid 1px #D7C500;outline-style: auto;}
+.url-prints #pxpProducCalc .material-selector > ul > li > ul > li a, .url-prints #pxpProducCalc .option-value li > a {width: 151px;text-align: center;}
+.url-prints #pxpProducCalc .option-row.customWorkRadio .option-value label {width: 151px;padding: 4px;}
+#integratedCalculator #pxpProducCalc .option-row input#txtQuantity{position:initial}
+#integratedCalculator .option-row .stepper-container input[type='text']{min-height:36px;border:1px solid #aaa;border-right:0;border-left:0;border-radius:0;text-align:center;padding:4px;min-width:76px;max-width:76px;margin:0 auto;outline:none;float:none!important}
+#integratedCalculator #pxpProducCalc .option-row input#txtQuantity{position:initial}
+#integratedCalculator .stepper-container .stepper__minus, .stepper-container .stepper__plus{position:absolute;top:0;bottom:0;width:32px;padding:0;border:none;outline:none}
+#integratedCalculator .url-prints :before,.url-prints :after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#integratedCalculator .stepper-container .btn:after{display:block;font-size: 18px;}
+#integratedCalculator .stepper-container .stepper-wrapper{position:relative;display:inline-block;width:130px}
+#integratedCalculator .stepper-container .stepper__minus:after{content: "-";}
+#integratedCalculator .stepper-container .stepper__plus:after{content: "+";}
+#integratedCalculator .stepper-container .stepper-wrapper:after{clear:both}
+#integratedCalculator .stepper-container .stepper-wrapper:after, #integratedCalculator .stepper-container .stepper-wrapper:before{content:"";display:table}
+#integratedCalculator #pxpProducCalc .stepper-container .stepper__plus{right:0;border-top-left-radius:0;border-bottom-left-radius:0}
+#integratedCalculator #pxpProducCalc .stepper-container .stepper__minus{left:0;border-top-right-radius:0;border-bottom-right-radius:0}
+#integratedCalculator #pxpProducCalc .btn{padding: 0}
+#integratedCalculator .stepper__measure {font-size: 14px}
 
 @media screen and (max-width:1400px) {
 header .logo-container,

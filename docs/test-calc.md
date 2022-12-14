@@ -1,11 +1,11 @@
 ## Калькулятор расчета стоимости листовой печати для визиток
 
 
-<div id="integratedCalculator" class="url-laser-cutting" style="position: relative; min-height: 150px;"></div>
+<div id="integratedCalculator" class="url-prints" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");
     let  params = { 
-            materialType: "laser-cutting-new",
+            materialType: "prints",
         };
         let integrated = new PxpCalcManager(container, params);
 </script>
