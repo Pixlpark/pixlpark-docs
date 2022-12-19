@@ -1,7 +1,7 @@
 ## Калькулятор расчета стоимости листовой печати для визиток
 
 
-<div id="integratedCalculator" class="url-prints" style="position: relative; min-height: 150px;"></div>
+<div id="integratedCalculator" class="url-prints-ones" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");
     let  params = { 

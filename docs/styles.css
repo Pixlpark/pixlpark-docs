@@ -733,6 +733,7 @@ sup {top: -0.5em;}
 #integratedCalculator #pxpProducCalc .stepper-container .stepper__minus{left:0;border-top-right-radius:0;border-bottom-right-radius:0}
 #integratedCalculator #pxpProducCalc .btn{padding: 0}
 #integratedCalculator .stepper__measure {font-size: 14px}
+.content .markdown-section h3+blockquote{margin: 1rem 0 0;}
 
 @media screen and (max-width:1400px) {
 header .logo-container,
