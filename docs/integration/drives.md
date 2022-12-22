@@ -97,7 +97,7 @@
 * Далее, нажать кнопку "__Сохранить__" и сбросить кэш сайта.
 * В разделе "__APIs&Services / Library__" выбрать и установить дополнительное приложение "__Google Drive API__".
 ![](../_media/integration/drive10.png ':size=50%')
-* Затем пройти по ссылке и настроить конфигурацию при помощи кнопки в правом верхнем углу, указав:
+* Затем пройти по [ссылке](https://developers.google.com/oauthplayground/) и настроить конфигурацию при помощи кнопки в правом верхнем углу, указав:
     + __Use your OAuth credentials__.
     + __OAuth Client ID__.
     + __OAuth Client secret__.

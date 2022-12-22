@@ -1,13 +1,35 @@
 ## Калькулятор расчета стоимости листовой печати для визиток
 
+<!-- <div id="merchCalculator"></div>
+<script>
+    var settings = {
+    merchId: 977,
+    merchVariantId: 63163,
+    };
+    console.log(1);
+   MerchPageManager("merchCalculator", settings);
+</script> -->
 
-<div id="integratedCalculator" class="url-prints-ones" style="position: relative; min-height: 150px;"></div>
+<div id="integratedCalculator" class="url-prints" style="position: relative; min-height: 150px;"></div>
 <script>
     let container = document.getElementById("integratedCalculator");
-    let  params = { 
+    let  params = {
             materialType: "prints",
         };
         let integrated = new PxpCalcManager(container, params);
+    let calcHeigth = document.getElementById("integratedCalculator");
+    const config = {
+        childList: true,
+    };
+    const callback = function(mutationsList, observer) {
+        for (let mutation of mutationsList) {
+            if (mutation.type === 'childList') {
+                console.log('1');
+            }
+        }
+    };
+    const observer = new MutationObserver(callback);
+    observer.observe(calcHeigth, config);
 </script>
 <style>
     .loading-wheel:before{position:absolute;top:50%;left:50%;content:'';z-index:1112;display:block;width:32px;height:32px;margin:-16px 0 0 -16px;border:2px solid rgb(117,117,117);border-radius:50%;border-left-color:transparent;border-right-color:transparent;animation:cssload-spin 500ms infinite linear;-o-animation:cssload-spin 500ms infinite linear;-ms-animation:cssload-spin 500ms infinite linear;-webkit-animation:cssload-spin 500ms infinite linear;-moz-animation:cssload-spin 500ms infinite linear}
