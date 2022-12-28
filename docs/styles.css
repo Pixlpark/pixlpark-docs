@@ -745,7 +745,7 @@ sup {top: -0.5em;}
 .url-letters #pxpProducCalc .comment-for-order .list-inline .checkbox {display: none;}
 .url-letters .arbitrary-input {width: 96.4%; max-width: 600px; padding: 6px 14px; line-height: 22px; color: #000;}
 .url-letters #pxpProducCalc .upload-for-order .list-inline .checkbox{display: none;}
-.url-letters#integratedCalculator #pxpProducCalc .btn {font-size:14px;padding: 5px 22px;}
+.url-letters#integratedCalculator #pxpProducCalc .btn {font-size:14px;padding: 4px 22px;}
 .url-letters .calc-variable {visibility: hidden;}
 .url-letters .calc-variable span, .calc-variable input{position: static; visibility: visible;}
 .url-letters #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity {width: 152px;}
