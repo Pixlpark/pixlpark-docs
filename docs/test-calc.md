@@ -5,8 +5,8 @@
     var settings = {
     merchId: 977,
     merchVariantId: 63163,
+    // hidePreview: true,
     };
-    console.log(1);
    MerchPageManager("merchCalculator", settings);
 </script>
 
