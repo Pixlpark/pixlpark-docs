@@ -734,6 +734,22 @@ sup {top: -0.5em;}
 #integratedCalculator #pxpProducCalc .btn{padding: 0}
 #integratedCalculator .stepper__measure {font-size: 14px}
 .content .markdown-section h3+blockquote{margin: 1rem 0 0;}
+.url-letters #pxpProducCalc .option-row.customWorkRadio .option-value label {padding: 4px 14px;}
+.url-letters #pxpProducCalc .material-selector>ul>li>ul>li a, #pxpProducCalc .option-value li>a {width: 150px; text-align: center;}
+.url-letters #pxpProducCalc .custom-works ul li.customWorkRadio ul li .checkbox label {width: 150px;}
+.url-letters ul li.calc-variable input.text.shortest {padding: 6px 12px; width: 153px; left: 2%; position: relative; left: 3px;}
+.url-letters #pxpProducCalc .letter-height .option-label, 
+.url-letters #pxpProducCalc .letter-height .list-inline {display: none;}
+.url-letters .text.shortest {line-height: 22px;}
+.url-letters #pxpProducCalc .alone.monotony-option .list-inline>li {width: 100%;}
+.url-letters #pxpProducCalc .comment-for-order .list-inline .checkbox {display: none;}
+.url-letters .arbitrary-input {width: 96.4%; max-width: 600px; padding: 6px 14px; line-height: 22px; color: #000;}
+.url-letters #pxpProducCalc .upload-for-order .list-inline .checkbox{display: none;}
+.url-letters#integratedCalculator #pxpProducCalc .btn {font-size:14px;padding: 5px 22px;}
+.url-letters .calc-variable {visibility: hidden;}
+.url-letters .calc-variable span, .calc-variable input{position: static; visibility: visible;}
+.url-letters #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity {width: 152px;}
+.url-letters #pxpProducCalc .buttons .ok {display: none;}
 
 @media screen and (max-width:1400px) {
 header .logo-container,
