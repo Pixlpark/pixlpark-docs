@@ -92,6 +92,7 @@
 	- [Дизайн](/app/design.md)
 	- [Локализация](/app/localization.md)
 	- [Сайты](/app/shop.md)
+	- [Уведомления](/app/notifications.md)
 
 - Профиль
 	- [Информация](/profile/info.md)
