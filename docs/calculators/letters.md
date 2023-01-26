@@ -905,7 +905,7 @@
 <script>
     let container = document.getElementById("integratedCalculator");
     let params = { 
-            materialType: "3d-letters",
+            materialType: "letters",
         };
     let integrated = new PxpCalcManager(container, params);
     if(window.innerWidth<=800) {
