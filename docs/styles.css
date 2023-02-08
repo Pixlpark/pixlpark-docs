@@ -167,7 +167,7 @@ header .bottom-row .search-clone_button {
 position: absolute;
 top: 0;
 right: 0;
-height: 100%;
+height: 35px;
 padding: 7px 25px;
 background: url(_media/search-icon.svg) no-repeat 50% var(--second-color);
 border-radius: var(--rounded-value);
@@ -510,9 +510,10 @@ table.laser-cutting-price tr:hover td{color:#354251;cursor:default;}
 .sheet-printing-products {text-align: center;}
 .content .markdown-section pre.formula {display: flex;}
 .content .markdown-section pre.formula>code.lang-formula {padding: 20px 25px; white-space: normal; font-size: 0.9rem;}
-[data-page="calculators/sheet-printing.md"] ol li > ul li, [data-page="calculators/document-printing.md"] ol li > ul li, [data-page="calculators/price-printing.md"] ol li > ul li {list-style: none;}
+[data-page="calculators/sheet-printing.md"] ol li > ul li, [data-page="calculators/document-printing.md"] ol li > ul li, [data-page="calculators/price-printing.md"] ol li > ul li, [data-page="calculators/gift.md"] ol li > ul li {list-style: none;}
 [data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul, [data-page="calculators/document-printing.md"] .markdown-section ol li > ul, [data-page="calculators/price-printing.md"] .markdown-section ol li > ul {padding-left: 0;}
-[data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote, [data-page="calculators/laser-cutting.md"] h3 + blockquote, [data-page="calculators/laser-cutting.md"] h4 + blockquote {margin: 2em 0 0;}
+[data-page="calculators/gift.md"] ol li > ul {padding-left: 0;}
+[data-page="calculators/sheet-printing.md"] h3 + blockquote, [data-page="calculators/sheet-printing.md"] h4 + blockquote, [data-page="calculators/document-printing.md"] h3 + blockquote, [data-page="calculators/document-printing.md"] h4 + blockquote, [data-page="calculators/laser-cutting.md"] h3 + blockquote, [data-page="calculators/laser-cutting.md"] h4 + blockquote, [data-page="calculators/gift.md"] h4 + blockquote {margin: 2em 0 0;}
 .content .markdown-section blockquote p {margin: 5px 0}
 #integratedCalculator{width:44%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; margin-top: 10px;min-width: 555px;}
 #integratedCalculator a,#integratedCalculator u{text-decoration:none;border-bottom:none;line-height:1.5}
@@ -750,6 +751,8 @@ sup {top: -0.5em;}
 .url-letters .calc-variable span, .calc-variable input{position: static; visibility: visible;}
 .url-letters #pxpProducCalc .option-row .option-value label[for=integratedCalculator-txtQuantity] input#integratedCalculator-txtQuantity {width: 152px;}
 .url-letters #pxpProducCalc .buttons .ok {display: none;}
+/* [data-page="calculators/gift.md"] .sheet-printing--mb {margin-bottom: 0;} */
+[data-page="calculators/gift.md"] .sheet-printing--mb ~ blockquote {margin: 25px 0 0;}
 
 @media screen and (max-width:1400px) {
 header .logo-container,
