@@ -753,6 +753,7 @@ sup {top: -0.5em;}
 .url-letters #pxpProducCalc .buttons .ok {display: none;}
 /* [data-page="calculators/gift.md"] .sheet-printing--mb {margin-bottom: 0;} */
 [data-page="calculators/gift.md"] .sheet-printing--mb ~ blockquote {margin: 25px 0 0;}
+[data-page="misc/app-data.md"] .markdown-section blockquote {margin: 1em 0;}
 
 @media screen and (max-width:1400px) {
 header .logo-container,

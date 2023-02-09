@@ -146,6 +146,7 @@
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
 	- [Данные для Web-to-Print сайта](/misc/prints-data.md)
 	- [Данные для бизнес-сувениров](/misc/gifts-data.md)
+	- [Данные для приложения](/misc/app-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
 	- [Техническая поддержка](/misc/support.md)
