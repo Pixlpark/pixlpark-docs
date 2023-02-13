@@ -93,6 +93,7 @@
 	- [Локализация](/app/localization.md)
 	- [Сайты](/app/shop.md)
 	- [Уведомления](/app/notifications.md)
+	- [Сервисы](/app/serviсes.md)
 
 - Профиль
 	- [Информация](/profile/info.md)
