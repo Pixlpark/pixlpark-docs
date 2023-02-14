@@ -950,3 +950,4 @@ header .header-link {
 [data-page="dev/calc-install.md"] .content .markdown-section h2[id="_3-Инициализация-калькулятора"] {margin-top: 0px!important;}
 [data-page="integration/payments.md"] .content .markdown-section>ul>li>ul>li ul{list-style:none;padding-left:0}
 [data-page="design/named-photobooks.md"] .markdown-section tr td:nth-child(1){text-align: center;}
+h2#Создание-har-файла {margin-top: 0px!important;border-top: 0;}
