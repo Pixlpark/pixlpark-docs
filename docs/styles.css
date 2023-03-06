@@ -555,12 +555,14 @@ table.laser-cutting-price tr:hover td {
   white-space: normal;
   font-size: 0.9rem;
 }
+[data-page="calculators/large-format-printing.md"] ol li > ul li,
 [data-page="calculators/sheet-printing.md"] ol li > ul li,
 [data-page="calculators/document-printing.md"] ol li > ul li,
 [data-page="calculators/price-printing.md"] ol li > ul li,
 [data-page="calculators/gift.md"] ol li > ul li {
   list-style: none;
 }
+[data-page="calculators/large-format-printing.md"] .markdown-section ol li > ul,
 [data-page="calculators/sheet-printing.md"] .markdown-section ol li > ul,
 [data-page="calculators/document-printing.md"] .markdown-section ol li > ul,
 [data-page="calculators/price-printing.md"] .markdown-section ol li > ul {
@@ -569,6 +571,8 @@ table.laser-cutting-price tr:hover td {
 [data-page="calculators/gift.md"] ol li > ul {
   padding-left: 0;
 }
+[data-page="calculators/large-format-printing.md"] h3 + blockquote,
+[data-page="calculators/large-format-printing.md"] h4 + blockquote,
 [data-page="calculators/sheet-printing.md"] h3 + blockquote,
 [data-page="calculators/sheet-printing.md"] h4 + blockquote,
 [data-page="calculators/document-printing.md"] h3 + blockquote,
@@ -2257,6 +2261,26 @@ sup {
 [data-page="misc/app-data.md"] .markdown-section blockquote {
   margin: 1em 0;
 }
+.url-banners #pxpProducCalc .pxp-material-selector .material-selector a {
+  width: 210px;
+  text-align: center
+}
+.url-banners .pxp-calculator .editor-sizes-width .option-value,.pxp-calculator .editor-sizes-height .option-value {padding: 6px 12px;}
+.url-banners #pxpProducCalc .pxp-editor-settings-controller .editor-sizes input.option-value {width: 150px;text-align: left;}
+.url-banners #pxpProducCalc .option-row.customWorkRadio .option-value label {width: 135px;}
+.url-banners #pxpProducCalc ul li.calc-variable {margin-bottom: 0;}
+.url-banners .calc-variable span[data-bind="html: title"] {font-weight: 400;font-size: 14px; line-height: 20px;}
+.url-banners input.text {padding: 1px 2px;font-size: 14px;line-height: 20px;}
+.url-banners ul.option-value.list-inline {clear: both;}
+.url-banners ul.option-value.list-inline + ul  {float: none;clear: both;}
+.url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-pages-count, .url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-pages-count + .editor-sizes-arbitrary-measurement {
+  display: none;
+}
+.url-banners .pxp-editor-settings-controller .editor-sizes.option-row {font-size:0;}
+.url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-width:after{content: '× ';}
+.url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-width, .url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-arbitrary-measurement {font-size: 14px;}
+.url-banners .pxp-editor-settings-controller .editor-sizes.option-row .editor-sizes-arbitrary-measurement {padding-left: 5px;}
+[data-page="calculators/large-format-printing.md"] h5 +ol li > ul li {list-style: inside;}
 
 @media screen and (max-width: 1400px) {
   header .logo-container,
@@ -2462,6 +2486,10 @@ sup {
       input#integratedCalculator-txtQuantity {
       width: 48%;
     }
+    .url-banners #pxpProducCalc .editor-sizes .editor-sizes-width,
+    .url-banners #pxpProducCalc .editor-sizes .editor-sizes-height{
+      display: block;
+    }
   }
   header .logo-container {
     width: 100%;
@@ -2606,3 +2634,5 @@ h2#Создание-har-файла,
   margin-top: 0px !important;
   border-top: 0 !important;
 }
+[data-page="calculators/large-format-printing.md"] .markdown-section h5 {margin: 1rem 0;}
+[data-page="calculators/large-format-printing.md"] .markdown-section h5 + blockquote{margin: 0;}

@@ -142,6 +142,7 @@
 
 - Редакторы
 	- [Редактор дизайнов](/editors/design.md)
+	- [Редактор интерьеров](/editors/interior.md)
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
