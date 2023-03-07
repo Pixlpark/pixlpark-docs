@@ -426,7 +426,7 @@ interface IDesignEditorConfig {
     }
 }
 
-//Конфигурация для внешней калькуляции стоимости
+// Конфигурация для внешней калькуляции стоимости
 interface IVectorEditorPriceCalculatorInfo {
     // Конфигурация стоимости зоны печати
     surfaces: IVectorEditorSurfacePriceInfo[];
