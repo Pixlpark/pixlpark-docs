@@ -425,6 +425,34 @@ interface IDesignEditorConfig {
         userToken?: string,
     }
 }
+
+//Конфигурация для внешней калькуляции стоимости
+interface IVectorEditorPriceCalculatorInfo {
+    // Конфигурация стоимости зоны печати
+    surfaces: IVectorEditorSurfacePriceInfo[];
+    // Общее количество зон печати
+    totalSurfaceCount: number;
+    // Общее количество заполненных зон печати
+    totalFilledSurfaceCount: number;
+}
+
+// Конфигурация стоимости зоны печати
+interface IVectorEditorSurfacePriceInfo {
+    // Индекс поверхности
+    index: number;
+    // Индекс зоны печати
+    zoneIndex: number;
+    // Название зоны печати
+    zoneName: string;
+    // Ширина зоны печати
+    zoneWidth: number;
+    // Высота зоны печати
+    zoneHeight: number;
+    // Цена зоны печати
+    zonePrice: number;
+    // Заполненность зоны печати
+    isFilled: Boolean;
+}
 ```
 
 ## Получение файлов к печати
