@@ -6,6 +6,7 @@
 	- [Карточка заказа](/orders/edit.md)
 	- [Список заказов](/orders/list.md)
 	- [Создание заказа](/orders/create.md)
+	- [Создание шаблона заказа](/orders/create-order-template.md)
 	- [Статистика](/orders/report.md)
 	- [Экспорт](/orders/export.md)
 	- [Настройка](/orders/settings.md)
@@ -13,6 +14,7 @@
 - Клиенты
 	- [Частные лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
+	- [Группы](/customers/groups.md)
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
@@ -33,7 +35,7 @@
 
 - Настройка
 	- [Регион](/site/region.md)
-	- [Доменны](/site/domains.md)
+	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
 	- [Доставка](/site/shippings.md)
 	- [Оплата](/site/payments.md)
@@ -90,6 +92,9 @@
 	- [Дизайн](/app/design.md)
 	- [Локализация](/app/localization.md)
 	- [Сайты](/app/shop.md)
+	- [Уведомления](/app/notifications.md)
+	- [Сервисы](/app/serviсes.md)
+
 - Профиль
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)
@@ -118,6 +123,7 @@
 	- [Язык разметки Scriban](/dev/scriban.md)
 	
 - Дизайнерам
+	- [Общая информация о PSD-шаблонах](/design/psd-general.md)
 	- [PSD-шаблоны для листовой печати](/design/businesscards.md)
 	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
 	- [PSD-шаблоны для календарей](/design/calendars.md)
@@ -132,11 +138,17 @@
 	- [Лазерная резка](/calculators/laser-cutting.md)
 	- [Нанесение на бизнес-сувениры](/calculators/gift.md)
 	- [Широкоформатная печать](/calculators/large-format-printing.md)
+	- [Печать документов](/calculators/document-printing.md)
+
+- Редакторы
+	- [Редактор дизайнов](/editors/design.md)
+	- [Редактор интерьеров](/editors/interior.md)
 
 - Прочее
 	- [Видео-презентации Pixlpark](/misc/presentations.md)
 	- [Данные для Web-to-Print сайта](/misc/prints-data.md)
 	- [Данные для бизнес-сувениров](/misc/gifts-data.md)
+	- [Данные для приложения](/misc/app-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
 	- [Техническая поддержка](/misc/support.md)
