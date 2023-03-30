@@ -3,6 +3,6 @@
 <script src="http://demo.pixlpark.ru/api/calc/externalCalc"></script>
 <script>
   var container = document.getElementById("container");
-  var params = { materialType: "framed-canvases" };
+  var params = { materialType: "89240" };
   var integrated = new PxpCalcManager(container, params);
 </script>
