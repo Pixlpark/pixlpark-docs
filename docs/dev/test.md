@@ -5,4 +5,7 @@
   var container = document.getElementById("container");
   var params = { materialType: "framed-canvases" };
   var integrated = new PxpCalcManager(container, params);
+  function onCompleteLoadPxpCalc(o){
+        console.log(o)
+  }
 </script>
