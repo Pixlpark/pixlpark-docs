@@ -26,10 +26,10 @@
 > Варианты настройки плейсхолдера:
 > + Плейсхолдер в форме прямоугольника или квадрата, расположенный под прямым углом. <br>
 Требуют отрисовки дополнительного контура и привязки к плейсхолдеру. В случае наличия пересекающихся плейсхолдеров необходимо отрисовать контур для каждого из них, а после - привязать контуры друг к другу.<br>
-[Cкачать пример шаблона](https://pixlpark.ru/content/images/faq/polygraphy/books_simple_example.zip) или [посмотреть в редакторе](https://demo.pixlpark.ru/printing/softcover-photobooks/15x20-soft/template-5276508/editor).
+[Cкачать пример шаблона](https://pixlpark.ru/content/images/faq/polygraphy/books_simple_example.zip) или [посмотреть в редакторе](https://demo.pixlpark.ru/printing/softcover-photobooks/15x20-soft/template-6258067/editor).
 > + Плейсхолдер в форме сложной фигуры.<br>
 Отрисовка контура может осуществляться не пером, а инструментом создания фигур с последующим сохранением контура выделенной фигуры из ее слоя. <br>
-[Cкачать пример шаблона](https://pixlpark.ru/content/images/faq/polygraphy/soft-book_example.zip) или [посмотреть в редакторе](https://demo.pixlpark.ru/printing/softcover-photobooks/15x20-soft/template-5278231/editor).
+[Cкачать пример шаблона](https://pixlpark.ru/content/images/faq/polygraphy/soft-book_example.zip) или [посмотреть в редакторе](https://demo.pixlpark.ru/printing/softcover-photobooks/15x20-soft/template-6258074/editor).
 > + [Плейсхолдер с рамкой над изображением](/design/photobooks?id=Шаблон-с-рамками)<br>
 [Cкачать пример шаблона](https://pixlpark.ru/content/images/faq/polygraphy/kollage_example.zip) или [посмотреть в редакторе](https://demo.pixlpark.ru/printing/collages/30x40/template-520445/editor).
 > + Плейсхолдер в форме прямоугольника или квадрата, расположенный под углом.<br>
