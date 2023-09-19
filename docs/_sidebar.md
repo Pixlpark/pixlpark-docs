@@ -123,10 +123,10 @@
 	- [Язык разметки Scriban](/dev/scriban.md)
 	
 - Дизайнерам
-	- [Общая информация о PSD-шаблонах](/design/psd-general.md)
+	- [Подготовка макетов](/design/psd-general.md)
 	<!-- - [PSD-шаблоны для листовой печати](/design/businesscards.md) -->
-	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
-	- [PSD-шаблоны для календарей](/design/calendars.md)
+	<!-- - [PSD-шаблоны для фотокниги](/design/photobooks.md) -->
+	<!-- - [PSD-шаблоны для календарей](/design/calendars.md) -->
 	- [PSD-шаблоны для именных фотокниг](/design/named-photobooks.md)
 	<!-- - [PSD-шаблоны для печатей и штампов](/design/stamps.md) -->
 	- [3D-модели для предпросмотра](/design/3d-models.md)
