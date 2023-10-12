@@ -124,6 +124,7 @@
 	
 - Дизайнерам
 	- [Макеты для шаблонов](/design/psd-general.md)
+	- [Метаинформация для выпускных альбомов](/design/Meta-information-for-graduation-albums.md)
 	- [Дизайны для именных фотокниг](/design/named-photobooks.md)
 	- [3D-модели для предпросмотра](/design/3d-models.md)
 
