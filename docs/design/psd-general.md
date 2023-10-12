@@ -176,7 +176,7 @@
 ![](../_media/design/CalendarCover.png ':size=70%')
 ![](../_media/design/CalendarPage.png ':size=70%')
 
-* Вы можете скачать примеры [макета обложки](https://admin.pixlpark.com/content/pxp-template-download/18103595?secret=4e95f489f54f2fe625b8c8f9e34aee35) и [страницы календаря](https://admin.pixlpark.com/content/pxp-template-download/18103581?secret=5f086c92f92673a69bec6bce3716e6a2) или [посмотреть их в редакторе](https://demo.pixlpark.ru/printing/wall-calendars-smart/a4-vert/template-6324454/editor?q=1&oq=0&p=13&ws=d751713988987e9331980363e24189ce).
+* Вы можете скачать примеры [макета обложки](https://admin.pixlpark.com/content/pxp-template-download/18103595?secret=4e95f489f54f2fe625b8c8f9e34aee35) и [страницы календаря](https://admin.pixlpark.com/content/pxp-template-download/18103581?secret=5f086c92f92673a69bec6bce3716e6a2) или [посмотреть их в редакторе](https://demo.pixlpark.ru/printing/wall-calendars/a4-vert/template-6324454/editor?q=1&oq=0&p=13&ws=d751713988987e9331980363e24189ce).
 
 ## Советы по работе с Adobe Photoshop
 ### Создание контура
